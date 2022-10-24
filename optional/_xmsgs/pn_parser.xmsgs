@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/grlib-gpl-1.1.0-b4108/lib/gaisler/misc.vhd&quot; into library gaisler</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/grlib-gpl-1.1.0-b4108/lib/grlib/amba.vhd&quot; into library grlib</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/grlib-gpl-1.1.0-b4108/lib/grlib/config.vhd&quot; into library grlib</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/grlib-gpl-1.1.0-b4108/lib/grlib/devices.vhd&quot; into library grlib</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/grlib-gpl-1.1.0-b4108/lib/grlib/stdlib.vhd&quot; into library grlib</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/grlib-gpl-1.1.0-b4108/lib/grlib/version.vhd&quot; into library grlib</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/grlib-gpl-1.1.0-b4108/lib/techmap/gencomp.vhd&quot; into library techmap</arg>
+</msg>
+
+</messages>
+
