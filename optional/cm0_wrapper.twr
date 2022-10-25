@@ -29,19 +29,19 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
 Timing constraint: TS_clkm = PERIOD TIMEGRP "clkm" 13 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 212327201 paths analyzed, 2724 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  12.843ns.
+ 214572049 paths analyzed, 2769 endpoints analyzed, 31 failing endpoints
+ 31 timing errors detected. (31 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  13.393ns.
 --------------------------------------------------------------------------------
 
-Paths for end point cortexm0/u_logic/J5i3z4 (SLICE_X18Y142.AX), 401523 paths
+Paths for end point cortexm0/u_logic/Rek2z4 (SLICE_X3Y101.AX), 462370 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     0.157ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cortexm0/u_logic/Vfd3z4 (FF)
-  Destination:          cortexm0/u_logic/J5i3z4 (FF)
+Slack (setup path):     -0.393ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cortexm0/u_logic/Nnc3z4 (FF)
+  Destination:          cortexm0/u_logic/Rek2z4 (FF)
   Requirement:          13.000ns
-  Data Path Delay:      12.780ns (Levels of Logic = 12)
-  Clock Path Skew:      -0.028ns (0.735 - 0.763)
+  Data Path Delay:      13.331ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.027ns (0.881 - 0.908)
   Source Clock:         clkm_BUFGP rising at 0.000ns
   Destination Clock:    clkm_BUFGP rising at 13.000ns
   Clock Uncertainty:    0.035ns
@@ -52,62 +52,62 @@ Slack (setup path):     0.157ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Vfd3z4 to cortexm0/u_logic/J5i3z4
+  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Nnc3z4 to cortexm0/u_logic/Rek2z4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X35Y100.DQ     Tcko                  0.391   cortexm0/u_logic/Vfd3z4
-                                                       cortexm0/u_logic/Vfd3z4
-    SLICE_X35Y101.C3     net (fanout=6)        0.704   cortexm0/u_logic/Vfd3z4
-    SLICE_X35Y101.C      Tilo                  0.259   cortexm0/u_logic/Bec3z4
-                                                       cortexm0/u_logic/Mmux_B90xx411
-    SLICE_X37Y102.B2     net (fanout=4)        0.922   cortexm0/u_logic/B90xx4
-    SLICE_X37Y102.B      Tilo                  0.259   cortexm0/u_logic/C7zwx4_J7zwx4_AND_4564_o1
-                                                       cortexm0/u_logic/Cjuwx43
-    SLICE_X37Y103.A5     net (fanout=5)        0.370   cortexm0/u_logic/Cjuwx43
-    SLICE_X37Y103.A      Tilo                  0.259   cortexm0/u_logic/Hdzwx4
-                                                       cortexm0/u_logic/Mmux_Kbzwx411
-    SLICE_X37Y103.C2     net (fanout=4)        0.446   cortexm0/u_logic/Kbzwx4
-    SLICE_X37Y103.C      Tilo                  0.259   cortexm0/u_logic/Hdzwx4
-                                                       cortexm0/u_logic/U5pwx43_SW2
-    SLICE_X37Y104.A5     net (fanout=1)        0.375   N452
-    SLICE_X37Y104.A      Tilo                  0.259   cortexm0/u_logic/Mis2z4
-                                                       cortexm0/u_logic/Mmux_A6zwx411
-    SLICE_X36Y107.B3     net (fanout=17)       0.753   cortexm0/u_logic/A6zwx4
-    SLICE_X36Y107.B      Tilo                  0.203   cortexm0/u_logic/Kkb3z4
+    SLICE_X4Y77.AQ       Tcko                  0.447   cortexm0/u_logic/Ipn2z4
+                                                       cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C2       net (fanout=7)        0.449   cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C        Tilo                  0.259   N264
+                                                       cortexm0/u_logic/Gyvwx4<10>_SW0
+    SLICE_X7Y77.A1       net (fanout=6)        0.646   N264
+    SLICE_X7Y77.A        Tilo                  0.259   cortexm0/u_logic/C9a3z4
+                                                       cortexm0/u_logic/Gyvwx4<10>
+    SLICE_X4Y75.B6       net (fanout=7)        0.505   cortexm0/u_logic/Gyvwx4
+    SLICE_X4Y75.B        Tilo                  0.203   cortexm0/u_logic/Vve3z4
+                                                       cortexm0/u_logic/Mmux_Mczwx411
+    SLICE_X9Y78.B3       net (fanout=1)        0.920   cortexm0/u_logic/Mczwx4
+    SLICE_X9Y78.B        Tilo                  0.259   cortexm0/u_logic/L8m2z4
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X11Y77.A5      net (fanout=6)        0.420   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X11Y77.A       Tilo                  0.259   N672
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o3_2
+    SLICE_X11Y77.C2      net (fanout=3)        0.441   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o31
+    SLICE_X11Y77.C       Tilo                  0.259   N672
                                                        cortexm0/u_logic/R3hvx4_N2zwx4_AND_4553_o_SW0_SW1
-    SLICE_X36Y107.C4     net (fanout=1)        0.267   N1129
-    SLICE_X36Y107.C      Tilo                  0.204   cortexm0/u_logic/Kkb3z4
+    SLICE_X11Y79.D5      net (fanout=1)        0.399   N1173
+    SLICE_X11Y79.D       Tilo                  0.259   cortexm0/u_logic/Tse3z4
                                                        cortexm0/u_logic/R3hvx4_N2zwx4_AND_4553_o_SW1
-    SLICE_X31Y117.A4     net (fanout=2)        1.235   N723
-    SLICE_X31Y117.A      Tilo                  0.259   cortexm0/u_logic/Qjuwx4
+    SLICE_X17Y86.B5      net (fanout=1)        1.175   N705
+    SLICE_X17Y86.B       Tilo                  0.259   cortexm0/u_logic/Ujp2z4
                                                        cortexm0/u_logic/E5owx42
-    SLICE_X31Y117.B6     net (fanout=7)        0.134   cortexm0/u_logic/E5owx42
-    SLICE_X31Y117.B      Tilo                  0.259   cortexm0/u_logic/Qjuwx4
+    SLICE_X19Y87.A5      net (fanout=8)        0.424   cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A       Tilo                  0.259   cortexm0/u_logic/H133z4
                                                        cortexm0/u_logic/E5owx44
-    SLICE_X31Y119.B6     net (fanout=15)       0.353   cortexm0/u_logic/E5owx4
-    SLICE_X31Y119.B      Tilo                  0.259   cortexm0/u_logic/Ikz2z4
+    SLICE_X19Y86.B1      net (fanout=14)       0.647   cortexm0/u_logic/E5owx4
+    SLICE_X19Y86.B       Tilo                  0.259   cortexm0/u_logic/Grl2z4
                                                        cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
-    SLICE_X32Y135.A3     net (fanout=8)        1.722   cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
-    SLICE_X32Y135.A      Tilo                  0.203   cortexm0/u_logic/Ki53z4
+    SLICE_X19Y100.A1     net (fanout=8)        1.366   cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A      Tilo                  0.259   cortexm0/u_logic/Ey03z4
                                                        cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
-    SLICE_X20Y135.A6     net (fanout=20)       1.040   cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
-    SLICE_X20Y135.A      Tilo                  0.203   cortexm0/u_logic/Zfv2z4
-                                                       cortexm0/u_logic/F6zvx43
-    SLICE_X18Y142.AX     net (fanout=16)       1.047   cortexm0/u_logic/F6zvx4
-    SLICE_X18Y142.CLK    Tdick                 0.136   cortexm0/u_logic/J5i3z4
-                                                       cortexm0/u_logic/J5i3z4
+    SLICE_X5Y95.D5       net (fanout=20)       1.361   cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D        Tilo                  0.259   cortexm0/u_logic/Nf03z4
+                                                       cortexm0/u_logic/C3qvx41
+    SLICE_X3Y101.AX      net (fanout=15)       1.016   cortexm0/u_logic/C3qvx4
+    SLICE_X3Y101.CLK     Tdick                 0.063   cortexm0/u_logic/Rek2z4
+                                                       cortexm0/u_logic/Rek2z4
     -------------------------------------------------  ---------------------------
-    Total                                     12.780ns (3.412ns logic, 9.368ns route)
+    Total                                     13.331ns (3.562ns logic, 9.769ns route)
                                                        (26.7% logic, 73.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.163ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cortexm0/u_logic/J9d3z4 (FF)
-  Destination:          cortexm0/u_logic/J5i3z4 (FF)
+Slack (setup path):     -0.349ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cortexm0/u_logic/Nnc3z4 (FF)
+  Destination:          cortexm0/u_logic/Rek2z4 (FF)
   Requirement:          13.000ns
-  Data Path Delay:      12.775ns (Levels of Logic = 13)
-  Clock Path Skew:      -0.027ns (0.735 - 0.762)
+  Data Path Delay:      13.287ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.027ns (0.881 - 0.908)
   Source Clock:         clkm_BUFGP rising at 0.000ns
   Destination Clock:    clkm_BUFGP rising at 13.000ns
   Clock Uncertainty:    0.035ns
@@ -118,128 +118,62 @@ Slack (setup path):     0.163ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/J9d3z4 to cortexm0/u_logic/J5i3z4
+  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Nnc3z4 to cortexm0/u_logic/Rek2z4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X38Y102.BQ     Tcko                  0.408   cortexm0/u_logic/J9d3z4
-                                                       cortexm0/u_logic/J9d3z4
-    SLICE_X38Y102.C1     net (fanout=7)        0.694   cortexm0/u_logic/J9d3z4
-    SLICE_X38Y102.C      Tilo                  0.205   cortexm0/u_logic/J9d3z4
-                                                       cortexm0/u_logic/K0wwx4<0>1
-    SLICE_X38Y102.B4     net (fanout=3)        0.283   cortexm0/u_logic/K0wwx4<0>
-    SLICE_X38Y102.B      Tilo                  0.205   cortexm0/u_logic/J9d3z4
-                                                       cortexm0/u_logic/K0wwx4<0>2
-    SLICE_X36Y101.D5     net (fanout=6)        0.421   cortexm0/u_logic/K0wwx4
-    SLICE_X36Y101.D      Tilo                  0.203   cortexm0/u_logic/Usl2z4
-                                                       cortexm0/u_logic/Cjuwx44_SW1
-    SLICE_X37Y103.A3     net (fanout=1)        0.481   N873
-    SLICE_X37Y103.A      Tilo                  0.259   cortexm0/u_logic/Hdzwx4
-                                                       cortexm0/u_logic/Mmux_Kbzwx411
-    SLICE_X37Y103.C2     net (fanout=4)        0.446   cortexm0/u_logic/Kbzwx4
-    SLICE_X37Y103.C      Tilo                  0.259   cortexm0/u_logic/Hdzwx4
-                                                       cortexm0/u_logic/U5pwx43_SW2
-    SLICE_X37Y104.A5     net (fanout=1)        0.375   N452
-    SLICE_X37Y104.A      Tilo                  0.259   cortexm0/u_logic/Mis2z4
-                                                       cortexm0/u_logic/Mmux_A6zwx411
-    SLICE_X36Y107.B3     net (fanout=17)       0.753   cortexm0/u_logic/A6zwx4
-    SLICE_X36Y107.B      Tilo                  0.203   cortexm0/u_logic/Kkb3z4
-                                                       cortexm0/u_logic/R3hvx4_N2zwx4_AND_4553_o_SW0_SW1
-    SLICE_X36Y107.C4     net (fanout=1)        0.267   N1129
-    SLICE_X36Y107.C      Tilo                  0.204   cortexm0/u_logic/Kkb3z4
-                                                       cortexm0/u_logic/R3hvx4_N2zwx4_AND_4553_o_SW1
-    SLICE_X31Y117.A4     net (fanout=2)        1.235   N723
-    SLICE_X31Y117.A      Tilo                  0.259   cortexm0/u_logic/Qjuwx4
-                                                       cortexm0/u_logic/E5owx42
-    SLICE_X31Y117.B6     net (fanout=7)        0.134   cortexm0/u_logic/E5owx42
-    SLICE_X31Y117.B      Tilo                  0.259   cortexm0/u_logic/Qjuwx4
-                                                       cortexm0/u_logic/E5owx44
-    SLICE_X31Y119.B6     net (fanout=15)       0.353   cortexm0/u_logic/E5owx4
-    SLICE_X31Y119.B      Tilo                  0.259   cortexm0/u_logic/Ikz2z4
-                                                       cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
-    SLICE_X32Y135.A3     net (fanout=8)        1.722   cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
-    SLICE_X32Y135.A      Tilo                  0.203   cortexm0/u_logic/Ki53z4
-                                                       cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
-    SLICE_X20Y135.A6     net (fanout=20)       1.040   cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
-    SLICE_X20Y135.A      Tilo                  0.203   cortexm0/u_logic/Zfv2z4
-                                                       cortexm0/u_logic/F6zvx43
-    SLICE_X18Y142.AX     net (fanout=16)       1.047   cortexm0/u_logic/F6zvx4
-    SLICE_X18Y142.CLK    Tdick                 0.136   cortexm0/u_logic/J5i3z4
-                                                       cortexm0/u_logic/J5i3z4
-    -------------------------------------------------  ---------------------------
-    Total                                     12.775ns (3.524ns logic, 9.251ns route)
-                                                       (27.6% logic, 72.4% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     0.206ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cortexm0/u_logic/Vfd3z4 (FF)
-  Destination:          cortexm0/u_logic/J5i3z4 (FF)
-  Requirement:          13.000ns
-  Data Path Delay:      12.731ns (Levels of Logic = 10)
-  Clock Path Skew:      -0.028ns (0.735 - 0.763)
-  Source Clock:         clkm_BUFGP rising at 0.000ns
-  Destination Clock:    clkm_BUFGP rising at 13.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Vfd3z4 to cortexm0/u_logic/J5i3z4
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X35Y100.DQ     Tcko                  0.391   cortexm0/u_logic/Vfd3z4
-                                                       cortexm0/u_logic/Vfd3z4
-    SLICE_X35Y101.C3     net (fanout=6)        0.704   cortexm0/u_logic/Vfd3z4
-    SLICE_X35Y101.C      Tilo                  0.259   cortexm0/u_logic/Bec3z4
-                                                       cortexm0/u_logic/Mmux_B90xx411
-    SLICE_X37Y102.B2     net (fanout=4)        0.922   cortexm0/u_logic/B90xx4
-    SLICE_X37Y102.B      Tilo                  0.259   cortexm0/u_logic/C7zwx4_J7zwx4_AND_4564_o1
-                                                       cortexm0/u_logic/Cjuwx43
-    SLICE_X37Y103.A5     net (fanout=5)        0.370   cortexm0/u_logic/Cjuwx43
-    SLICE_X37Y103.A      Tilo                  0.259   cortexm0/u_logic/Hdzwx4
-                                                       cortexm0/u_logic/Mmux_Kbzwx411
-    SLICE_X37Y103.C2     net (fanout=4)        0.446   cortexm0/u_logic/Kbzwx4
-    SLICE_X37Y103.C      Tilo                  0.259   cortexm0/u_logic/Hdzwx4
-                                                       cortexm0/u_logic/U5pwx43_SW2
-    SLICE_X37Y104.A5     net (fanout=1)        0.375   N452
-    SLICE_X37Y104.A      Tilo                  0.259   cortexm0/u_logic/Mis2z4
-                                                       cortexm0/u_logic/Mmux_A6zwx411
-    SLICE_X34Y110.A1     net (fanout=17)       1.420   cortexm0/u_logic/A6zwx4
-    SLICE_X34Y110.A      Tilo                  0.205   cortexm0/u_logic/C7zwx4_J7zwx4_AND_4564_o3
+    SLICE_X4Y77.AQ       Tcko                  0.447   cortexm0/u_logic/Ipn2z4
+                                                       cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C2       net (fanout=7)        0.449   cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C        Tilo                  0.259   N264
+                                                       cortexm0/u_logic/Gyvwx4<10>_SW0
+    SLICE_X7Y77.A1       net (fanout=6)        0.646   N264
+    SLICE_X7Y77.A        Tilo                  0.259   cortexm0/u_logic/C9a3z4
+                                                       cortexm0/u_logic/Gyvwx4<10>
+    SLICE_X4Y75.B6       net (fanout=7)        0.505   cortexm0/u_logic/Gyvwx4
+    SLICE_X4Y75.B        Tilo                  0.203   cortexm0/u_logic/Vve3z4
+                                                       cortexm0/u_logic/Mmux_Mczwx411
+    SLICE_X9Y78.B3       net (fanout=1)        0.920   cortexm0/u_logic/Mczwx4
+    SLICE_X9Y78.B        Tilo                  0.259   cortexm0/u_logic/L8m2z4
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X11Y78.A5      net (fanout=6)        0.566   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X11Y78.A       Tilo                  0.259   cortexm0/u_logic/I4s2z4
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o3_1
+    SLICE_X14Y80.A6      net (fanout=2)        0.540   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o3
+    SLICE_X14Y80.A       Tilo                  0.205   cortexm0/u_logic/Cvr2z4
+                                                       cortexm0/u_logic/C7zwx4_J7zwx4_AND_4564_o2
+    SLICE_X15Y81.A6      net (fanout=6)        0.308   cortexm0/u_logic/C7zwx4_J7zwx4_AND_4564_o2
+    SLICE_X15Y81.A       Tilo                  0.259   cortexm0/u_logic/Kf23z4
                                                        cortexm0/u_logic/Vzywx43
-    SLICE_X31Y117.D6     net (fanout=9)        1.071   cortexm0/u_logic/Vzywx4
-    SLICE_X31Y117.D      Tilo                  0.259   cortexm0/u_logic/Qjuwx4
-                                                       cortexm0/u_logic/Qjuwx41
-    SLICE_X31Y119.B2     net (fanout=9)        0.663   cortexm0/u_logic/Qjuwx4
-    SLICE_X31Y119.B      Tilo                  0.259   cortexm0/u_logic/Ikz2z4
+    SLICE_X17Y86.B3      net (fanout=9)        1.031   cortexm0/u_logic/Vzywx4
+    SLICE_X17Y86.B       Tilo                  0.259   cortexm0/u_logic/Ujp2z4
+                                                       cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A5      net (fanout=8)        0.424   cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A       Tilo                  0.259   cortexm0/u_logic/H133z4
+                                                       cortexm0/u_logic/E5owx44
+    SLICE_X19Y86.B1      net (fanout=14)       0.647   cortexm0/u_logic/E5owx4
+    SLICE_X19Y86.B       Tilo                  0.259   cortexm0/u_logic/Grl2z4
                                                        cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
-    SLICE_X32Y135.A3     net (fanout=8)        1.722   cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
-    SLICE_X32Y135.A      Tilo                  0.203   cortexm0/u_logic/Ki53z4
+    SLICE_X19Y100.A1     net (fanout=8)        1.366   cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A      Tilo                  0.259   cortexm0/u_logic/Ey03z4
                                                        cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
-    SLICE_X20Y135.A6     net (fanout=20)       1.040   cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
-    SLICE_X20Y135.A      Tilo                  0.203   cortexm0/u_logic/Zfv2z4
-                                                       cortexm0/u_logic/F6zvx43
-    SLICE_X18Y142.AX     net (fanout=16)       1.047   cortexm0/u_logic/F6zvx4
-    SLICE_X18Y142.CLK    Tdick                 0.136   cortexm0/u_logic/J5i3z4
-                                                       cortexm0/u_logic/J5i3z4
+    SLICE_X5Y95.D5       net (fanout=20)       1.361   cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D        Tilo                  0.259   cortexm0/u_logic/Nf03z4
+                                                       cortexm0/u_logic/C3qvx41
+    SLICE_X3Y101.AX      net (fanout=15)       1.016   cortexm0/u_logic/C3qvx4
+    SLICE_X3Y101.CLK     Tdick                 0.063   cortexm0/u_logic/Rek2z4
+                                                       cortexm0/u_logic/Rek2z4
     -------------------------------------------------  ---------------------------
-    Total                                     12.731ns (2.951ns logic, 9.780ns route)
-                                                       (23.2% logic, 76.8% route)
+    Total                                     13.287ns (3.508ns logic, 9.779ns route)
+                                                       (26.4% logic, 73.6% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point cortexm0/u_logic/Tki2z4_1 (SLICE_X13Y128.DX), 6085667 paths
---------------------------------------------------------------------------------
-Slack (setup path):     0.165ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cortexm0/u_logic/Svk2z4_5 (FF)
-  Destination:          cortexm0/u_logic/Tki2z4_1 (FF)
+Slack (setup path):     -0.323ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cortexm0/u_logic/Nnc3z4 (FF)
+  Destination:          cortexm0/u_logic/Rek2z4 (FF)
   Requirement:          13.000ns
-  Data Path Delay:      12.826ns (Levels of Logic = 11)
-  Clock Path Skew:      0.026ns (0.290 - 0.264)
+  Data Path Delay:      13.261ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.027ns (0.881 - 0.908)
   Source Clock:         clkm_BUFGP rising at 0.000ns
   Destination Clock:    clkm_BUFGP rising at 13.000ns
   Clock Uncertainty:    0.035ns
@@ -250,59 +184,62 @@ Slack (setup path):     0.165ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Svk2z4_5 to cortexm0/u_logic/Tki2z4_1
+  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Nnc3z4 to cortexm0/u_logic/Rek2z4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X25Y128.DQ     Tcko                  0.391   cortexm0/u_logic/Svk2z4_5
-                                                       cortexm0/u_logic/Svk2z4_5
-    SLICE_X31Y131.D1     net (fanout=13)       1.088   cortexm0/u_logic/Svk2z4_5
-    SLICE_X31Y131.D      Tilo                  0.259   cortexm0/u_logic/Vp52z4_Vb52z4_OR_1171_o
-                                                       cortexm0/u_logic/Vp52z4_Vb52z4_OR_1171_o1
-    SLICE_X22Y140.B6     net (fanout=11)       2.295   cortexm0/u_logic/Vp52z4_Vb52z4_OR_1171_o
-    SLICE_X22Y140.B      Tilo                  0.205   cortexm0/u_logic/Edl2z4
-                                                       cortexm0/u_logic/Kqzvx42
-    SLICE_X22Y140.A6     net (fanout=2)        0.456   cortexm0/u_logic/Kqzvx43
-    SLICE_X22Y140.A      Tilo                  0.205   cortexm0/u_logic/Edl2z4
-                                                       cortexm0/u_logic/Kqzvx411
-    SLICE_X32Y133.B6     net (fanout=4)        1.084   cortexm0/u_logic/Kqzvx4
-    SLICE_X32Y133.B      Tilo                  0.203   N843
-                                                       cortexm0/u_logic/Mmux_Z78wx4146_SW0_SW0
-    SLICE_X32Y133.A2     net (fanout=1)        0.812   N938
-    SLICE_X32Y133.A      Tilo                  0.203   N843
-                                                       cortexm0/u_logic/Mmux_Z78wx4147
-    SLICE_X32Y133.D3     net (fanout=1)        0.296   cortexm0/u_logic/Mmux_Z78wx4149
-    SLICE_X32Y133.D      Tilo                  0.203   N843
-                                                       cortexm0/u_logic/Mmux_Z78wx4148_SW0
-    SLICE_X23Y133.C6     net (fanout=1)        0.684   N843
-    SLICE_X23Y133.C      Tilo                  0.259   cortexm0/u_logic/Ox1wx431
-                                                       cortexm0/u_logic/Mmux_Z78wx4152
-    SLICE_X25Y132.C3     net (fanout=1)        0.665   cortexm0/u_logic/Mmux_Z78wx4154
-    SLICE_X25Y132.C      Tilo                  0.259   N479
-                                                       cortexm0/u_logic/Mmux_Z78wx4153
-    SLICE_X25Y132.D5     net (fanout=3)        0.225   cortexm0/u_logic/Mmux_Z78wx4155
-    SLICE_X25Y132.D      Tilo                  0.259   N479
-                                                       cortexm0/u_logic/Mmux_Z78wx4155_SW0
-    SLICE_X21Y130.C3     net (fanout=2)        0.769   N479
-    SLICE_X21Y130.C      Tilo                  0.259   cortexm0/u_logic/Rd73z4
-                                                       cortexm0/u_logic/Xt6wx44
-    SLICE_X19Y129.A4     net (fanout=2)        0.488   cortexm0/u_logic/Xt6wx44
-    SLICE_X19Y129.A      Tilo                  0.259   cortexm0/u_logic/Z8s2z4
-                                                       cortexm0/u_logic/Xxhvx418
-    SLICE_X13Y128.DX     net (fanout=2)        0.937   cortexm0/u_logic/Xxhvx4
-    SLICE_X13Y128.CLK    Tdick                 0.063   cortexm0/u_logic/Tki2z4_1
-                                                       cortexm0/u_logic/Tki2z4_1
+    SLICE_X4Y77.AQ       Tcko                  0.447   cortexm0/u_logic/Ipn2z4
+                                                       cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C2       net (fanout=7)        0.449   cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C        Tilo                  0.259   N264
+                                                       cortexm0/u_logic/Gyvwx4<10>_SW0
+    SLICE_X7Y77.A1       net (fanout=6)        0.646   N264
+    SLICE_X7Y77.A        Tilo                  0.259   cortexm0/u_logic/C9a3z4
+                                                       cortexm0/u_logic/Gyvwx4<10>
+    SLICE_X4Y75.B6       net (fanout=7)        0.505   cortexm0/u_logic/Gyvwx4
+    SLICE_X4Y75.B        Tilo                  0.203   cortexm0/u_logic/Vve3z4
+                                                       cortexm0/u_logic/Mmux_Mczwx411
+    SLICE_X9Y78.B3       net (fanout=1)        0.920   cortexm0/u_logic/Mczwx4
+    SLICE_X9Y78.B        Tilo                  0.259   cortexm0/u_logic/L8m2z4
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X13Y80.A1      net (fanout=6)        0.878   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X13Y80.A       Tilo                  0.259   cortexm0/u_logic/Mhn2z4
+                                                       cortexm0/u_logic/Mmux_H6zwx411
+    SLICE_X11Y79.D3      net (fanout=9)        0.571   cortexm0/u_logic/H6zwx4
+    SLICE_X11Y79.D       Tilo                  0.259   cortexm0/u_logic/Tse3z4
+                                                       cortexm0/u_logic/R3hvx4_N2zwx4_AND_4553_o_SW1
+    SLICE_X17Y86.B5      net (fanout=1)        1.175   N705
+    SLICE_X17Y86.B       Tilo                  0.259   cortexm0/u_logic/Ujp2z4
+                                                       cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A5      net (fanout=8)        0.424   cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A       Tilo                  0.259   cortexm0/u_logic/H133z4
+                                                       cortexm0/u_logic/E5owx44
+    SLICE_X19Y86.B1      net (fanout=14)       0.647   cortexm0/u_logic/E5owx4
+    SLICE_X19Y86.B       Tilo                  0.259   cortexm0/u_logic/Grl2z4
+                                                       cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A1     net (fanout=8)        1.366   cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A      Tilo                  0.259   cortexm0/u_logic/Ey03z4
+                                                       cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D5       net (fanout=20)       1.361   cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D        Tilo                  0.259   cortexm0/u_logic/Nf03z4
+                                                       cortexm0/u_logic/C3qvx41
+    SLICE_X3Y101.AX      net (fanout=15)       1.016   cortexm0/u_logic/C3qvx4
+    SLICE_X3Y101.CLK     Tdick                 0.063   cortexm0/u_logic/Rek2z4
+                                                       cortexm0/u_logic/Rek2z4
     -------------------------------------------------  ---------------------------
-    Total                                     12.826ns (3.027ns logic, 9.799ns route)
-                                                       (23.6% logic, 76.4% route)
+    Total                                     13.261ns (3.303ns logic, 9.958ns route)
+                                                       (24.9% logic, 75.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.165ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cortexm0/u_logic/Svk2z4_5 (FF)
-  Destination:          cortexm0/u_logic/Tki2z4_1 (FF)
+
+Paths for end point cortexm0/u_logic/Ql23z4 (SLICE_X15Y95.CX), 462370 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.379ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cortexm0/u_logic/Nnc3z4 (FF)
+  Destination:          cortexm0/u_logic/Ql23z4 (FF)
   Requirement:          13.000ns
-  Data Path Delay:      12.826ns (Levels of Logic = 11)
-  Clock Path Skew:      0.026ns (0.290 - 0.264)
+  Data Path Delay:      13.286ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.058ns (0.758 - 0.816)
   Source Clock:         clkm_BUFGP rising at 0.000ns
   Destination Clock:    clkm_BUFGP rising at 13.000ns
   Clock Uncertainty:    0.035ns
@@ -313,63 +250,62 @@ Slack (setup path):     0.165ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Svk2z4_5 to cortexm0/u_logic/Tki2z4_1
+  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Nnc3z4 to cortexm0/u_logic/Ql23z4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X25Y128.DQ     Tcko                  0.391   cortexm0/u_logic/Svk2z4_5
-                                                       cortexm0/u_logic/Svk2z4_5
-    SLICE_X31Y131.D1     net (fanout=13)       1.088   cortexm0/u_logic/Svk2z4_5
-    SLICE_X31Y131.D      Tilo                  0.259   cortexm0/u_logic/Vp52z4_Vb52z4_OR_1171_o
-                                                       cortexm0/u_logic/Vp52z4_Vb52z4_OR_1171_o1
-    SLICE_X30Y129.D6     net (fanout=11)       0.478   cortexm0/u_logic/Vp52z4_Vb52z4_OR_1171_o
-    SLICE_X30Y129.D      Tilo                  0.205   cortexm0/u_logic/Nd3wx47
-                                                       cortexm0/u_logic/Nd3wx47
-    SLICE_X35Y118.C5     net (fanout=1)        1.292   cortexm0/u_logic/Nd3wx47
-    SLICE_X35Y118.C      Tilo                  0.259   cortexm0/u_logic/Nd3wx48
-                                                       cortexm0/u_logic/Nd3wx49
-    SLICE_X35Y118.A6     net (fanout=1)        0.279   cortexm0/u_logic/Nd3wx49
-    SLICE_X35Y118.A      Tilo                  0.259   cortexm0/u_logic/Nd3wx48
-                                                       cortexm0/u_logic/Nd3wx410
-    SLICE_X25Y135.C6     net (fanout=7)        1.718   cortexm0/u_logic/Nd3wx4
-    SLICE_X25Y135.C      Tilo                  0.259   cortexm0/u_logic/C3z2z4
-                                                       cortexm0/u_logic/Mmux_Phh2z411
-    SLICE_X22Y135.D6     net (fanout=4)        0.319   cortexm0/u_logic/Phh2z4
-    SLICE_X22Y135.DQ     Tad_logic             0.778   cortexm0/u_logic/n16585<32>
-                                                       cortexm0/u_logic/Madd_n16585_lut<32>
-                                                       cortexm0/u_logic/Madd_n16585_cy<32>
-                                                       cortexm0/u_logic/n16585<32>_rt.1
-    SLICE_X28Y133.D5     net (fanout=1)        0.618   cortexm0/u_logic/n16585<32>
-    SLICE_X28Y133.DMUX   Topdd                 0.393   cortexm0/u_logic/Aru2z4
-                                                       cortexm0/u_logic/n16585<32>_rt
-                                                       cortexm0/u_logic/Madd_Pri3z4_cy<32>
-    SLICE_X26Y130.B5     net (fanout=12)       0.660   cortexm0/u_logic/Pri3z4<32>
-    SLICE_X26Y130.B      Tilo                  0.205   cortexm0/u_logic/Kaf3z4
-                                                       cortexm0/u_logic/Y5zvx43
-    SLICE_X26Y130.D1     net (fanout=4)        0.461   cortexm0/u_logic/Y5zvx4
-    SLICE_X26Y130.CMUX   Topdc                 0.338   cortexm0/u_logic/Kaf3z4
-                                                       cortexm0/u_logic/Mmux_Z78wx4162_SW1_F
-                                                       cortexm0/u_logic/Mmux_Z78wx4162_SW1
-    SLICE_X19Y129.B5     net (fanout=1)        0.856   N928
-    SLICE_X19Y129.B      Tilo                  0.259   cortexm0/u_logic/Z8s2z4
-                                                       cortexm0/u_logic/Xt6wx43
-    SLICE_X19Y129.A5     net (fanout=2)        0.193   cortexm0/u_logic/Xt6wx43
-    SLICE_X19Y129.A      Tilo                  0.259   cortexm0/u_logic/Z8s2z4
-                                                       cortexm0/u_logic/Xxhvx418
-    SLICE_X13Y128.DX     net (fanout=2)        0.937   cortexm0/u_logic/Xxhvx4
-    SLICE_X13Y128.CLK    Tdick                 0.063   cortexm0/u_logic/Tki2z4_1
-                                                       cortexm0/u_logic/Tki2z4_1
+    SLICE_X4Y77.AQ       Tcko                  0.447   cortexm0/u_logic/Ipn2z4
+                                                       cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C2       net (fanout=7)        0.449   cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C        Tilo                  0.259   N264
+                                                       cortexm0/u_logic/Gyvwx4<10>_SW0
+    SLICE_X7Y77.A1       net (fanout=6)        0.646   N264
+    SLICE_X7Y77.A        Tilo                  0.259   cortexm0/u_logic/C9a3z4
+                                                       cortexm0/u_logic/Gyvwx4<10>
+    SLICE_X4Y75.B6       net (fanout=7)        0.505   cortexm0/u_logic/Gyvwx4
+    SLICE_X4Y75.B        Tilo                  0.203   cortexm0/u_logic/Vve3z4
+                                                       cortexm0/u_logic/Mmux_Mczwx411
+    SLICE_X9Y78.B3       net (fanout=1)        0.920   cortexm0/u_logic/Mczwx4
+    SLICE_X9Y78.B        Tilo                  0.259   cortexm0/u_logic/L8m2z4
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X11Y77.A5      net (fanout=6)        0.420   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X11Y77.A       Tilo                  0.259   N672
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o3_2
+    SLICE_X11Y77.C2      net (fanout=3)        0.441   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o31
+    SLICE_X11Y77.C       Tilo                  0.259   N672
+                                                       cortexm0/u_logic/R3hvx4_N2zwx4_AND_4553_o_SW0_SW1
+    SLICE_X11Y79.D5      net (fanout=1)        0.399   N1173
+    SLICE_X11Y79.D       Tilo                  0.259   cortexm0/u_logic/Tse3z4
+                                                       cortexm0/u_logic/R3hvx4_N2zwx4_AND_4553_o_SW1
+    SLICE_X17Y86.B5      net (fanout=1)        1.175   N705
+    SLICE_X17Y86.B       Tilo                  0.259   cortexm0/u_logic/Ujp2z4
+                                                       cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A5      net (fanout=8)        0.424   cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A       Tilo                  0.259   cortexm0/u_logic/H133z4
+                                                       cortexm0/u_logic/E5owx44
+    SLICE_X19Y86.B1      net (fanout=14)       0.647   cortexm0/u_logic/E5owx4
+    SLICE_X19Y86.B       Tilo                  0.259   cortexm0/u_logic/Grl2z4
+                                                       cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A1     net (fanout=8)        1.366   cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A      Tilo                  0.259   cortexm0/u_logic/Ey03z4
+                                                       cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D5       net (fanout=20)       1.361   cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D        Tilo                  0.259   cortexm0/u_logic/Nf03z4
+                                                       cortexm0/u_logic/C3qvx41
+    SLICE_X15Y95.CX      net (fanout=15)       0.971   cortexm0/u_logic/C3qvx4
+    SLICE_X15Y95.CLK     Tdick                 0.063   cortexm0/u_logic/Ql23z4
+                                                       cortexm0/u_logic/Ql23z4
     -------------------------------------------------  ---------------------------
-    Total                                     12.826ns (3.927ns logic, 8.899ns route)
-                                                       (30.6% logic, 69.4% route)
+    Total                                     13.286ns (3.562ns logic, 9.724ns route)
+                                                       (26.8% logic, 73.2% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.184ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cortexm0/u_logic/H3d3z4_3 (FF)
-  Destination:          cortexm0/u_logic/Tki2z4_1 (FF)
+Slack (setup path):     -0.335ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cortexm0/u_logic/Nnc3z4 (FF)
+  Destination:          cortexm0/u_logic/Ql23z4 (FF)
   Requirement:          13.000ns
-  Data Path Delay:      12.804ns (Levels of Logic = 15)
-  Clock Path Skew:      0.023ns (0.290 - 0.267)
+  Data Path Delay:      13.242ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.058ns (0.758 - 0.816)
   Source Clock:         clkm_BUFGP rising at 0.000ns
   Destination Clock:    clkm_BUFGP rising at 13.000ns
   Clock Uncertainty:    0.035ns
@@ -380,78 +316,62 @@ Slack (setup path):     0.184ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/H3d3z4_3 to cortexm0/u_logic/Tki2z4_1
+  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Nnc3z4 to cortexm0/u_logic/Ql23z4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X27Y128.CQ     Tcko                  0.391   cortexm0/u_logic/H3d3z4_4
-                                                       cortexm0/u_logic/H3d3z4_3
-    SLICE_X38Y132.D4     net (fanout=17)       1.983   cortexm0/u_logic/H3d3z4_3
-    SLICE_X38Y132.CMUX   Topdc                 0.338   cortexm0/u_logic/M3e3z4
-                                                       cortexm0/u_logic/Gm1wx416_F
-                                                       cortexm0/u_logic/Gm1wx416
-    SLICE_X31Y131.A4     net (fanout=1)        0.816   cortexm0/u_logic/Gm1wx417
-    SLICE_X31Y131.A      Tilo                  0.259   cortexm0/u_logic/Vp52z4_Vb52z4_OR_1171_o
-                                                       cortexm0/u_logic/Gm1wx417
-    SLICE_X35Y132.C6     net (fanout=1)        0.831   cortexm0/u_logic/Gm1wx418
-    SLICE_X35Y132.C      Tilo                  0.259   cortexm0/u_logic/Snd3z4
-                                                       cortexm0/u_logic/Gm1wx418
-    SLICE_X35Y132.D5     net (fanout=7)        0.229   cortexm0/u_logic/Gm1wx4
-    SLICE_X35Y132.D      Tilo                  0.259   cortexm0/u_logic/Snd3z4
-                                                       cortexm0/u_logic/Mxor_R99wx4_B19wx4_XOR_32_o_xo<0>1
-    SLICE_X22Y130.D6     net (fanout=4)        0.874   cortexm0/u_logic/R99wx4_B19wx4_XOR_32_o
-    SLICE_X22Y130.COUT   Topcyd                0.260   cortexm0/u_logic/Madd_n16585_cy<12>
-                                                       cortexm0/u_logic/Madd_n16585_lut<12>
-                                                       cortexm0/u_logic/Madd_n16585_cy<12>
-    SLICE_X22Y131.CIN    net (fanout=1)        0.003   cortexm0/u_logic/Madd_n16585_cy<12>
-    SLICE_X22Y131.COUT   Tbyp                  0.076   cortexm0/u_logic/Madd_n16585_cy<16>
-                                                       cortexm0/u_logic/Madd_n16585_cy<16>
-    SLICE_X22Y132.CIN    net (fanout=1)        0.003   cortexm0/u_logic/Madd_n16585_cy<16>
-    SLICE_X22Y132.COUT   Tbyp                  0.076   cortexm0/u_logic/Madd_n16585_cy<20>
-                                                       cortexm0/u_logic/Madd_n16585_cy<20>
-    SLICE_X22Y133.CIN    net (fanout=1)        0.003   cortexm0/u_logic/Madd_n16585_cy<20>
-    SLICE_X22Y133.COUT   Tbyp                  0.076   cortexm0/u_logic/Madd_n16585_cy<24>
-                                                       cortexm0/u_logic/Madd_n16585_cy<24>
-    SLICE_X22Y134.CIN    net (fanout=1)        0.003   cortexm0/u_logic/Madd_n16585_cy<24>
-    SLICE_X22Y134.COUT   Tbyp                  0.076   cortexm0/u_logic/Svk2z4
-                                                       cortexm0/u_logic/Madd_n16585_cy<28>
-    SLICE_X22Y135.CIN    net (fanout=1)        0.003   cortexm0/u_logic/Madd_n16585_cy<28>
-    SLICE_X22Y135.BMUX   Tcinb                 0.260   cortexm0/u_logic/n16585<32>
-                                                       cortexm0/u_logic/Madd_n16585_cy<32>
-    SLICE_X28Y133.B4     net (fanout=1)        0.924   cortexm0/u_logic/n16585<30>
-    SLICE_X28Y133.DMUX   Topbd                 0.571   cortexm0/u_logic/Aru2z4
-                                                       cortexm0/u_logic/n16585<30>_rt
-                                                       cortexm0/u_logic/Madd_Pri3z4_cy<32>
-    SLICE_X26Y130.B5     net (fanout=12)       0.660   cortexm0/u_logic/Pri3z4<32>
-    SLICE_X26Y130.B      Tilo                  0.205   cortexm0/u_logic/Kaf3z4
-                                                       cortexm0/u_logic/Y5zvx43
-    SLICE_X26Y130.D1     net (fanout=4)        0.461   cortexm0/u_logic/Y5zvx4
-    SLICE_X26Y130.CMUX   Topdc                 0.338   cortexm0/u_logic/Kaf3z4
-                                                       cortexm0/u_logic/Mmux_Z78wx4162_SW1_F
-                                                       cortexm0/u_logic/Mmux_Z78wx4162_SW1
-    SLICE_X19Y129.B5     net (fanout=1)        0.856   N928
-    SLICE_X19Y129.B      Tilo                  0.259   cortexm0/u_logic/Z8s2z4
-                                                       cortexm0/u_logic/Xt6wx43
-    SLICE_X19Y129.A5     net (fanout=2)        0.193   cortexm0/u_logic/Xt6wx43
-    SLICE_X19Y129.A      Tilo                  0.259   cortexm0/u_logic/Z8s2z4
-                                                       cortexm0/u_logic/Xxhvx418
-    SLICE_X13Y128.DX     net (fanout=2)        0.937   cortexm0/u_logic/Xxhvx4
-    SLICE_X13Y128.CLK    Tdick                 0.063   cortexm0/u_logic/Tki2z4_1
-                                                       cortexm0/u_logic/Tki2z4_1
+    SLICE_X4Y77.AQ       Tcko                  0.447   cortexm0/u_logic/Ipn2z4
+                                                       cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C2       net (fanout=7)        0.449   cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C        Tilo                  0.259   N264
+                                                       cortexm0/u_logic/Gyvwx4<10>_SW0
+    SLICE_X7Y77.A1       net (fanout=6)        0.646   N264
+    SLICE_X7Y77.A        Tilo                  0.259   cortexm0/u_logic/C9a3z4
+                                                       cortexm0/u_logic/Gyvwx4<10>
+    SLICE_X4Y75.B6       net (fanout=7)        0.505   cortexm0/u_logic/Gyvwx4
+    SLICE_X4Y75.B        Tilo                  0.203   cortexm0/u_logic/Vve3z4
+                                                       cortexm0/u_logic/Mmux_Mczwx411
+    SLICE_X9Y78.B3       net (fanout=1)        0.920   cortexm0/u_logic/Mczwx4
+    SLICE_X9Y78.B        Tilo                  0.259   cortexm0/u_logic/L8m2z4
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X11Y78.A5      net (fanout=6)        0.566   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X11Y78.A       Tilo                  0.259   cortexm0/u_logic/I4s2z4
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o3_1
+    SLICE_X14Y80.A6      net (fanout=2)        0.540   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o3
+    SLICE_X14Y80.A       Tilo                  0.205   cortexm0/u_logic/Cvr2z4
+                                                       cortexm0/u_logic/C7zwx4_J7zwx4_AND_4564_o2
+    SLICE_X15Y81.A6      net (fanout=6)        0.308   cortexm0/u_logic/C7zwx4_J7zwx4_AND_4564_o2
+    SLICE_X15Y81.A       Tilo                  0.259   cortexm0/u_logic/Kf23z4
+                                                       cortexm0/u_logic/Vzywx43
+    SLICE_X17Y86.B3      net (fanout=9)        1.031   cortexm0/u_logic/Vzywx4
+    SLICE_X17Y86.B       Tilo                  0.259   cortexm0/u_logic/Ujp2z4
+                                                       cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A5      net (fanout=8)        0.424   cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A       Tilo                  0.259   cortexm0/u_logic/H133z4
+                                                       cortexm0/u_logic/E5owx44
+    SLICE_X19Y86.B1      net (fanout=14)       0.647   cortexm0/u_logic/E5owx4
+    SLICE_X19Y86.B       Tilo                  0.259   cortexm0/u_logic/Grl2z4
+                                                       cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A1     net (fanout=8)        1.366   cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A      Tilo                  0.259   cortexm0/u_logic/Ey03z4
+                                                       cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D5       net (fanout=20)       1.361   cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D        Tilo                  0.259   cortexm0/u_logic/Nf03z4
+                                                       cortexm0/u_logic/C3qvx41
+    SLICE_X15Y95.CX      net (fanout=15)       0.971   cortexm0/u_logic/C3qvx4
+    SLICE_X15Y95.CLK     Tdick                 0.063   cortexm0/u_logic/Ql23z4
+                                                       cortexm0/u_logic/Ql23z4
     -------------------------------------------------  ---------------------------
-    Total                                     12.804ns (4.025ns logic, 8.779ns route)
-                                                       (31.4% logic, 68.6% route)
+    Total                                     13.242ns (3.508ns logic, 9.734ns route)
+                                                       (26.5% logic, 73.5% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point ahblite_bridge/state_machine_1/current_state (SLICE_X22Y136.B5), 2148124 paths
---------------------------------------------------------------------------------
-Slack (setup path):     0.176ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cortexm0/u_logic/Fij2z4 (FF)
-  Destination:          ahblite_bridge/state_machine_1/current_state (FF)
+Slack (setup path):     -0.309ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cortexm0/u_logic/Nnc3z4 (FF)
+  Destination:          cortexm0/u_logic/Ql23z4 (FF)
   Requirement:          13.000ns
-  Data Path Delay:      12.710ns (Levels of Logic = 11)
-  Clock Path Skew:      -0.079ns (0.231 - 0.310)
+  Data Path Delay:      13.216ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.058ns (0.758 - 0.816)
   Source Clock:         clkm_BUFGP rising at 0.000ns
   Destination Clock:    clkm_BUFGP rising at 13.000ns
   Clock Uncertainty:    0.035ns
@@ -462,59 +382,62 @@ Slack (setup path):     0.176ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Fij2z4 to ahblite_bridge/state_machine_1/current_state
+  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Nnc3z4 to cortexm0/u_logic/Ql23z4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X10Y128.DQ     Tcko                  0.408   cortexm0/u_logic/Fij2z4
-                                                       cortexm0/u_logic/Fij2z4
-    SLICE_X14Y129.B6     net (fanout=194)      0.822   cortexm0/u_logic/Fij2z4
-    SLICE_X14Y129.B      Tilo                  0.205   cortexm0/u_logic/Nsk2z4
-                                                       cortexm0/u_logic/Xwawx43
-    SLICE_X13Y128.B4     net (fanout=1)        0.704   cortexm0/u_logic/Xwawx43
-    SLICE_X13Y128.B      Tilo                  0.259   cortexm0/u_logic/Tki2z4_1
-                                                       cortexm0/u_logic/Xwawx47
-    SLICE_X17Y128.B6     net (fanout=6)        0.695   cortexm0/u_logic/Xwawx4
-    SLICE_X17Y128.B      Tilo                  0.259   cortexm0/u_logic/Tki2z4
-                                                       cortexm0/u_logic/Xwawx4_Qobwx4_AND_2119_o1
-    SLICE_X19Y129.C6     net (fanout=4)        0.514   cortexm0/u_logic/Xwawx4_Qobwx4_AND_2119_o
-    SLICE_X19Y129.C      Tilo                  0.259   cortexm0/u_logic/Z8s2z4
-                                                       cortexm0/u_logic/Mxor_U09wx4_B19wx4_XOR_31_o_xo<0>1
-    SLICE_X22Y128.B3     net (fanout=3)        0.992   cortexm0/u_logic/U09wx4_B19wx4_XOR_31_o
-    SLICE_X22Y128.BMUX   Topbb                 0.368   cortexm0/u_logic/I4s2z4
-                                                       cortexm0/u_logic/Madd_n16585_lut<2>
-                                                       cortexm0/u_logic/Madd_n16585_cy<4>
-    SLICE_X28Y126.B4     net (fanout=1)        0.720   cortexm0/u_logic/n16585<2>
-    SLICE_X28Y126.BMUX   Topbb                 0.376   cortexm0/u_logic/Madd_Pri3z4_cy<4>
-                                                       cortexm0/u_logic/n16585<2>_rt
-                                                       cortexm0/u_logic/Madd_Pri3z4_cy<4>
-    SLICE_X15Y120.C6     net (fanout=5)        1.357   cortexm0/u_logic/Pri3z4<2>
-    SLICE_X15Y120.C      Tilo                  0.259   cortexm0/u_logic/Qdj2z4
-                                                       cortexm0/u_logic/Loyvx4
-    SLICE_X21Y126.C5     net (fanout=3)        0.917   cortexm0/u_logic/Loyvx4
-    SLICE_X21Y126.C      Tilo                  0.259   cortexm0/u_logic/Rr83z4
-                                                       cortexm0/u_logic/W6qvx41
-    SLICE_X21Y126.D5     net (fanout=3)        0.221   cortexm0/u_logic/W6qvx4
-    SLICE_X21Y126.D      Tilo                  0.259   cortexm0/u_logic/Rr83z4
-                                                       cortexm0/u_logic/htrans_o<1>21
-    SLICE_X33Y133.C6     net (fanout=1)        1.294   cortexm0/u_logic/htrans_o<1>2
-    SLICE_X33Y133.C      Tilo                  0.259   cortexm0/u_logic/C5n2z4
-                                                       cortexm0/u_logic/htrans_o<1>
-    SLICE_X22Y136.B5     net (fanout=3)        0.963   htrans<1>
-    SLICE_X22Y136.CLK    Tas                   0.341   ahblite_bridge/state_machine_1/current_state
-                                                       ahblite_bridge/state_machine_1/next_state1
-                                                       ahblite_bridge/state_machine_1/current_state
+    SLICE_X4Y77.AQ       Tcko                  0.447   cortexm0/u_logic/Ipn2z4
+                                                       cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C2       net (fanout=7)        0.449   cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C        Tilo                  0.259   N264
+                                                       cortexm0/u_logic/Gyvwx4<10>_SW0
+    SLICE_X7Y77.A1       net (fanout=6)        0.646   N264
+    SLICE_X7Y77.A        Tilo                  0.259   cortexm0/u_logic/C9a3z4
+                                                       cortexm0/u_logic/Gyvwx4<10>
+    SLICE_X4Y75.B6       net (fanout=7)        0.505   cortexm0/u_logic/Gyvwx4
+    SLICE_X4Y75.B        Tilo                  0.203   cortexm0/u_logic/Vve3z4
+                                                       cortexm0/u_logic/Mmux_Mczwx411
+    SLICE_X9Y78.B3       net (fanout=1)        0.920   cortexm0/u_logic/Mczwx4
+    SLICE_X9Y78.B        Tilo                  0.259   cortexm0/u_logic/L8m2z4
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X13Y80.A1      net (fanout=6)        0.878   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X13Y80.A       Tilo                  0.259   cortexm0/u_logic/Mhn2z4
+                                                       cortexm0/u_logic/Mmux_H6zwx411
+    SLICE_X11Y79.D3      net (fanout=9)        0.571   cortexm0/u_logic/H6zwx4
+    SLICE_X11Y79.D       Tilo                  0.259   cortexm0/u_logic/Tse3z4
+                                                       cortexm0/u_logic/R3hvx4_N2zwx4_AND_4553_o_SW1
+    SLICE_X17Y86.B5      net (fanout=1)        1.175   N705
+    SLICE_X17Y86.B       Tilo                  0.259   cortexm0/u_logic/Ujp2z4
+                                                       cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A5      net (fanout=8)        0.424   cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A       Tilo                  0.259   cortexm0/u_logic/H133z4
+                                                       cortexm0/u_logic/E5owx44
+    SLICE_X19Y86.B1      net (fanout=14)       0.647   cortexm0/u_logic/E5owx4
+    SLICE_X19Y86.B       Tilo                  0.259   cortexm0/u_logic/Grl2z4
+                                                       cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A1     net (fanout=8)        1.366   cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A      Tilo                  0.259   cortexm0/u_logic/Ey03z4
+                                                       cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D5       net (fanout=20)       1.361   cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D        Tilo                  0.259   cortexm0/u_logic/Nf03z4
+                                                       cortexm0/u_logic/C3qvx41
+    SLICE_X15Y95.CX      net (fanout=15)       0.971   cortexm0/u_logic/C3qvx4
+    SLICE_X15Y95.CLK     Tdick                 0.063   cortexm0/u_logic/Ql23z4
+                                                       cortexm0/u_logic/Ql23z4
     -------------------------------------------------  ---------------------------
-    Total                                     12.710ns (3.511ns logic, 9.199ns route)
-                                                       (27.6% logic, 72.4% route)
+    Total                                     13.216ns (3.303ns logic, 9.913ns route)
+                                                       (25.0% logic, 75.0% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.231ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cortexm0/u_logic/Pdi2z4 (FF)
-  Destination:          ahblite_bridge/state_machine_1/current_state (FF)
+
+Paths for end point cortexm0/u_logic/Hc13z4 (SLICE_X2Y96.AX), 462370 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.362ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cortexm0/u_logic/Nnc3z4 (FF)
+  Destination:          cortexm0/u_logic/Hc13z4 (FF)
   Requirement:          13.000ns
-  Data Path Delay:      12.681ns (Levels of Logic = 9)
-  Clock Path Skew:      -0.053ns (0.231 - 0.284)
+  Data Path Delay:      13.309ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.018ns (0.890 - 0.908)
   Source Clock:         clkm_BUFGP rising at 0.000ns
   Destination Clock:    clkm_BUFGP rising at 13.000ns
   Clock Uncertainty:    0.035ns
@@ -525,53 +448,62 @@ Slack (setup path):     0.231ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Pdi2z4 to ahblite_bridge/state_machine_1/current_state
+  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Nnc3z4 to cortexm0/u_logic/Hc13z4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X16Y129.AQ     Tcko                  0.447   cortexm0/u_logic/Pdi2z4
-                                                       cortexm0/u_logic/Pdi2z4
-    SLICE_X15Y121.C6     net (fanout=77)       1.329   cortexm0/u_logic/Pdi2z4
-    SLICE_X15Y121.C      Tilo                  0.259   cortexm0/u_logic/Yzi2z4
-                                                       cortexm0/u_logic/U09wx41_SW0
-    SLICE_X19Y129.C4     net (fanout=1)        1.802   N531
-    SLICE_X19Y129.C      Tilo                  0.259   cortexm0/u_logic/Z8s2z4
-                                                       cortexm0/u_logic/Mxor_U09wx4_B19wx4_XOR_31_o_xo<0>1
-    SLICE_X22Y128.B3     net (fanout=3)        0.992   cortexm0/u_logic/U09wx4_B19wx4_XOR_31_o
-    SLICE_X22Y128.BMUX   Topbb                 0.368   cortexm0/u_logic/I4s2z4
-                                                       cortexm0/u_logic/Madd_n16585_lut<2>
-                                                       cortexm0/u_logic/Madd_n16585_cy<4>
-    SLICE_X28Y126.B4     net (fanout=1)        0.720   cortexm0/u_logic/n16585<2>
-    SLICE_X28Y126.BMUX   Topbb                 0.376   cortexm0/u_logic/Madd_Pri3z4_cy<4>
-                                                       cortexm0/u_logic/n16585<2>_rt
-                                                       cortexm0/u_logic/Madd_Pri3z4_cy<4>
-    SLICE_X15Y120.C6     net (fanout=5)        1.357   cortexm0/u_logic/Pri3z4<2>
-    SLICE_X15Y120.C      Tilo                  0.259   cortexm0/u_logic/Qdj2z4
-                                                       cortexm0/u_logic/Loyvx4
-    SLICE_X21Y126.C5     net (fanout=3)        0.917   cortexm0/u_logic/Loyvx4
-    SLICE_X21Y126.C      Tilo                  0.259   cortexm0/u_logic/Rr83z4
-                                                       cortexm0/u_logic/W6qvx41
-    SLICE_X21Y126.D5     net (fanout=3)        0.221   cortexm0/u_logic/W6qvx4
-    SLICE_X21Y126.D      Tilo                  0.259   cortexm0/u_logic/Rr83z4
-                                                       cortexm0/u_logic/htrans_o<1>21
-    SLICE_X33Y133.C6     net (fanout=1)        1.294   cortexm0/u_logic/htrans_o<1>2
-    SLICE_X33Y133.C      Tilo                  0.259   cortexm0/u_logic/C5n2z4
-                                                       cortexm0/u_logic/htrans_o<1>
-    SLICE_X22Y136.B5     net (fanout=3)        0.963   htrans<1>
-    SLICE_X22Y136.CLK    Tas                   0.341   ahblite_bridge/state_machine_1/current_state
-                                                       ahblite_bridge/state_machine_1/next_state1
-                                                       ahblite_bridge/state_machine_1/current_state
+    SLICE_X4Y77.AQ       Tcko                  0.447   cortexm0/u_logic/Ipn2z4
+                                                       cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C2       net (fanout=7)        0.449   cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C        Tilo                  0.259   N264
+                                                       cortexm0/u_logic/Gyvwx4<10>_SW0
+    SLICE_X7Y77.A1       net (fanout=6)        0.646   N264
+    SLICE_X7Y77.A        Tilo                  0.259   cortexm0/u_logic/C9a3z4
+                                                       cortexm0/u_logic/Gyvwx4<10>
+    SLICE_X4Y75.B6       net (fanout=7)        0.505   cortexm0/u_logic/Gyvwx4
+    SLICE_X4Y75.B        Tilo                  0.203   cortexm0/u_logic/Vve3z4
+                                                       cortexm0/u_logic/Mmux_Mczwx411
+    SLICE_X9Y78.B3       net (fanout=1)        0.920   cortexm0/u_logic/Mczwx4
+    SLICE_X9Y78.B        Tilo                  0.259   cortexm0/u_logic/L8m2z4
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X11Y77.A5      net (fanout=6)        0.420   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X11Y77.A       Tilo                  0.259   N672
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o3_2
+    SLICE_X11Y77.C2      net (fanout=3)        0.441   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o31
+    SLICE_X11Y77.C       Tilo                  0.259   N672
+                                                       cortexm0/u_logic/R3hvx4_N2zwx4_AND_4553_o_SW0_SW1
+    SLICE_X11Y79.D5      net (fanout=1)        0.399   N1173
+    SLICE_X11Y79.D       Tilo                  0.259   cortexm0/u_logic/Tse3z4
+                                                       cortexm0/u_logic/R3hvx4_N2zwx4_AND_4553_o_SW1
+    SLICE_X17Y86.B5      net (fanout=1)        1.175   N705
+    SLICE_X17Y86.B       Tilo                  0.259   cortexm0/u_logic/Ujp2z4
+                                                       cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A5      net (fanout=8)        0.424   cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A       Tilo                  0.259   cortexm0/u_logic/H133z4
+                                                       cortexm0/u_logic/E5owx44
+    SLICE_X19Y86.B1      net (fanout=14)       0.647   cortexm0/u_logic/E5owx4
+    SLICE_X19Y86.B       Tilo                  0.259   cortexm0/u_logic/Grl2z4
+                                                       cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A1     net (fanout=8)        1.366   cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A      Tilo                  0.259   cortexm0/u_logic/Ey03z4
+                                                       cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D5       net (fanout=20)       1.361   cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D        Tilo                  0.259   cortexm0/u_logic/Nf03z4
+                                                       cortexm0/u_logic/C3qvx41
+    SLICE_X2Y96.AX       net (fanout=15)       0.921   cortexm0/u_logic/C3qvx4
+    SLICE_X2Y96.CLK      Tdick                 0.136   cortexm0/u_logic/Hc13z4
+                                                       cortexm0/u_logic/Hc13z4
     -------------------------------------------------  ---------------------------
-    Total                                     12.681ns (3.086ns logic, 9.595ns route)
-                                                       (24.3% logic, 75.7% route)
+    Total                                     13.309ns (3.635ns logic, 9.674ns route)
+                                                       (27.3% logic, 72.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.238ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cortexm0/u_logic/Fij2z4 (FF)
-  Destination:          ahblite_bridge/state_machine_1/current_state (FF)
+Slack (setup path):     -0.318ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cortexm0/u_logic/Nnc3z4 (FF)
+  Destination:          cortexm0/u_logic/Hc13z4 (FF)
   Requirement:          13.000ns
-  Data Path Delay:      12.648ns (Levels of Logic = 9)
-  Clock Path Skew:      -0.079ns (0.231 - 0.310)
+  Data Path Delay:      13.265ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.018ns (0.890 - 0.908)
   Source Clock:         clkm_BUFGP rising at 0.000ns
   Destination Clock:    clkm_BUFGP rising at 13.000ns
   Clock Uncertainty:    0.035ns
@@ -582,130 +514,204 @@ Slack (setup path):     0.238ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Fij2z4 to ahblite_bridge/state_machine_1/current_state
+  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Nnc3z4 to cortexm0/u_logic/Hc13z4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X10Y128.DQ     Tcko                  0.408   cortexm0/u_logic/Fij2z4
-                                                       cortexm0/u_logic/Fij2z4
-    SLICE_X15Y122.B6     net (fanout=194)      1.007   cortexm0/u_logic/Fij2z4
-    SLICE_X15Y122.B      Tilo                  0.259   cortexm0/u_logic/Dtj2z4
-                                                       cortexm0/u_logic/S87wx41
-    SLICE_X11Y128.A1     net (fanout=13)       1.339   cortexm0/u_logic/S87wx4
-    SLICE_X11Y128.A      Tilo                  0.259   cortexm0/u_logic/Y873z4
-                                                       cortexm0/u_logic/Ol6wx41
-    SLICE_X11Y128.D3     net (fanout=3)        0.320   cortexm0/u_logic/Ol6wx4
-    SLICE_X11Y128.D      Tilo                  0.259   cortexm0/u_logic/Y873z4
-                                                       cortexm0/u_logic/Mrsvx45
-    SLICE_X25Y129.A6     net (fanout=1)        1.072   cortexm0/u_logic/Mrsvx45
-    SLICE_X25Y129.A      Tilo                  0.259   cortexm0/u_logic/Fgm2z4_1
-                                                       cortexm0/u_logic/Mrsvx414
-    SLICE_X15Y120.C5     net (fanout=70)       2.694   cortexm0/u_logic/Mrsvx4
-    SLICE_X15Y120.C      Tilo                  0.259   cortexm0/u_logic/Qdj2z4
-                                                       cortexm0/u_logic/Loyvx4
-    SLICE_X21Y126.C5     net (fanout=3)        0.917   cortexm0/u_logic/Loyvx4
-    SLICE_X21Y126.C      Tilo                  0.259   cortexm0/u_logic/Rr83z4
-                                                       cortexm0/u_logic/W6qvx41
-    SLICE_X21Y126.D5     net (fanout=3)        0.221   cortexm0/u_logic/W6qvx4
-    SLICE_X21Y126.D      Tilo                  0.259   cortexm0/u_logic/Rr83z4
-                                                       cortexm0/u_logic/htrans_o<1>21
-    SLICE_X33Y133.C6     net (fanout=1)        1.294   cortexm0/u_logic/htrans_o<1>2
-    SLICE_X33Y133.C      Tilo                  0.259   cortexm0/u_logic/C5n2z4
-                                                       cortexm0/u_logic/htrans_o<1>
-    SLICE_X22Y136.B5     net (fanout=3)        0.963   htrans<1>
-    SLICE_X22Y136.CLK    Tas                   0.341   ahblite_bridge/state_machine_1/current_state
-                                                       ahblite_bridge/state_machine_1/next_state1
-                                                       ahblite_bridge/state_machine_1/current_state
+    SLICE_X4Y77.AQ       Tcko                  0.447   cortexm0/u_logic/Ipn2z4
+                                                       cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C2       net (fanout=7)        0.449   cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C        Tilo                  0.259   N264
+                                                       cortexm0/u_logic/Gyvwx4<10>_SW0
+    SLICE_X7Y77.A1       net (fanout=6)        0.646   N264
+    SLICE_X7Y77.A        Tilo                  0.259   cortexm0/u_logic/C9a3z4
+                                                       cortexm0/u_logic/Gyvwx4<10>
+    SLICE_X4Y75.B6       net (fanout=7)        0.505   cortexm0/u_logic/Gyvwx4
+    SLICE_X4Y75.B        Tilo                  0.203   cortexm0/u_logic/Vve3z4
+                                                       cortexm0/u_logic/Mmux_Mczwx411
+    SLICE_X9Y78.B3       net (fanout=1)        0.920   cortexm0/u_logic/Mczwx4
+    SLICE_X9Y78.B        Tilo                  0.259   cortexm0/u_logic/L8m2z4
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X11Y78.A5      net (fanout=6)        0.566   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X11Y78.A       Tilo                  0.259   cortexm0/u_logic/I4s2z4
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o3_1
+    SLICE_X14Y80.A6      net (fanout=2)        0.540   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o3
+    SLICE_X14Y80.A       Tilo                  0.205   cortexm0/u_logic/Cvr2z4
+                                                       cortexm0/u_logic/C7zwx4_J7zwx4_AND_4564_o2
+    SLICE_X15Y81.A6      net (fanout=6)        0.308   cortexm0/u_logic/C7zwx4_J7zwx4_AND_4564_o2
+    SLICE_X15Y81.A       Tilo                  0.259   cortexm0/u_logic/Kf23z4
+                                                       cortexm0/u_logic/Vzywx43
+    SLICE_X17Y86.B3      net (fanout=9)        1.031   cortexm0/u_logic/Vzywx4
+    SLICE_X17Y86.B       Tilo                  0.259   cortexm0/u_logic/Ujp2z4
+                                                       cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A5      net (fanout=8)        0.424   cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A       Tilo                  0.259   cortexm0/u_logic/H133z4
+                                                       cortexm0/u_logic/E5owx44
+    SLICE_X19Y86.B1      net (fanout=14)       0.647   cortexm0/u_logic/E5owx4
+    SLICE_X19Y86.B       Tilo                  0.259   cortexm0/u_logic/Grl2z4
+                                                       cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A1     net (fanout=8)        1.366   cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A      Tilo                  0.259   cortexm0/u_logic/Ey03z4
+                                                       cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D5       net (fanout=20)       1.361   cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D        Tilo                  0.259   cortexm0/u_logic/Nf03z4
+                                                       cortexm0/u_logic/C3qvx41
+    SLICE_X2Y96.AX       net (fanout=15)       0.921   cortexm0/u_logic/C3qvx4
+    SLICE_X2Y96.CLK      Tdick                 0.136   cortexm0/u_logic/Hc13z4
+                                                       cortexm0/u_logic/Hc13z4
     -------------------------------------------------  ---------------------------
-    Total                                     12.648ns (2.821ns logic, 9.827ns route)
-                                                       (22.3% logic, 77.7% route)
+    Total                                     13.265ns (3.581ns logic, 9.684ns route)
+                                                       (27.0% logic, 73.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.292ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cortexm0/u_logic/Nnc3z4 (FF)
+  Destination:          cortexm0/u_logic/Hc13z4 (FF)
+  Requirement:          13.000ns
+  Data Path Delay:      13.239ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.018ns (0.890 - 0.908)
+  Source Clock:         clkm_BUFGP rising at 0.000ns
+  Destination Clock:    clkm_BUFGP rising at 13.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cortexm0/u_logic/Nnc3z4 to cortexm0/u_logic/Hc13z4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y77.AQ       Tcko                  0.447   cortexm0/u_logic/Ipn2z4
+                                                       cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C2       net (fanout=7)        0.449   cortexm0/u_logic/Nnc3z4
+    SLICE_X5Y77.C        Tilo                  0.259   N264
+                                                       cortexm0/u_logic/Gyvwx4<10>_SW0
+    SLICE_X7Y77.A1       net (fanout=6)        0.646   N264
+    SLICE_X7Y77.A        Tilo                  0.259   cortexm0/u_logic/C9a3z4
+                                                       cortexm0/u_logic/Gyvwx4<10>
+    SLICE_X4Y75.B6       net (fanout=7)        0.505   cortexm0/u_logic/Gyvwx4
+    SLICE_X4Y75.B        Tilo                  0.203   cortexm0/u_logic/Vve3z4
+                                                       cortexm0/u_logic/Mmux_Mczwx411
+    SLICE_X9Y78.B3       net (fanout=1)        0.920   cortexm0/u_logic/Mczwx4
+    SLICE_X9Y78.B        Tilo                  0.259   cortexm0/u_logic/L8m2z4
+                                                       cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X13Y80.A1      net (fanout=6)        0.878   cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o1
+    SLICE_X13Y80.A       Tilo                  0.259   cortexm0/u_logic/Mhn2z4
+                                                       cortexm0/u_logic/Mmux_H6zwx411
+    SLICE_X11Y79.D3      net (fanout=9)        0.571   cortexm0/u_logic/H6zwx4
+    SLICE_X11Y79.D       Tilo                  0.259   cortexm0/u_logic/Tse3z4
+                                                       cortexm0/u_logic/R3hvx4_N2zwx4_AND_4553_o_SW1
+    SLICE_X17Y86.B5      net (fanout=1)        1.175   N705
+    SLICE_X17Y86.B       Tilo                  0.259   cortexm0/u_logic/Ujp2z4
+                                                       cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A5      net (fanout=8)        0.424   cortexm0/u_logic/E5owx42
+    SLICE_X19Y87.A       Tilo                  0.259   cortexm0/u_logic/H133z4
+                                                       cortexm0/u_logic/E5owx44
+    SLICE_X19Y86.B1      net (fanout=14)       0.647   cortexm0/u_logic/E5owx4
+    SLICE_X19Y86.B       Tilo                  0.259   cortexm0/u_logic/Grl2z4
+                                                       cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A1     net (fanout=8)        1.366   cortexm0/u_logic/Uqwwx4_Brwwx4_AND_4324_o7
+    SLICE_X19Y100.A      Tilo                  0.259   cortexm0/u_logic/Ey03z4
+                                                       cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D5       net (fanout=20)       1.361   cortexm0/u_logic/Q8rwx4_X8rwx4_AND_3649_o
+    SLICE_X5Y95.D        Tilo                  0.259   cortexm0/u_logic/Nf03z4
+                                                       cortexm0/u_logic/C3qvx41
+    SLICE_X2Y96.AX       net (fanout=15)       0.921   cortexm0/u_logic/C3qvx4
+    SLICE_X2Y96.CLK      Tdick                 0.136   cortexm0/u_logic/Hc13z4
+                                                       cortexm0/u_logic/Hc13z4
+    -------------------------------------------------  ---------------------------
+    Total                                     13.239ns (3.376ns logic, 9.863ns route)
+                                                       (25.5% logic, 74.5% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: TS_clkm = PERIOD TIMEGRP "clkm" 13 ns HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point cortexm0/u_logic/Byw2z4 (SLICE_X10Y115.A6), 1 path
+Paths for end point cortexm0/u_logic/B6j2z4 (SLICE_X30Y89.A6), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.412ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               cortexm0/u_logic/Byw2z4 (FF)
-  Destination:          cortexm0/u_logic/Byw2z4 (FF)
+Slack (hold path):      0.420ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               cortexm0/u_logic/B6j2z4 (FF)
+  Destination:          cortexm0/u_logic/B6j2z4 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.412ns (Levels of Logic = 1)
+  Data Path Delay:      0.420ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         clkm_BUFGP rising at 13.000ns
   Destination Clock:    clkm_BUFGP rising at 13.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: cortexm0/u_logic/Byw2z4 to cortexm0/u_logic/Byw2z4
+  Minimum Data Path at Fast Process Corner: cortexm0/u_logic/B6j2z4 to cortexm0/u_logic/B6j2z4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X10Y115.AQ     Tcko                  0.200   cortexm0/u_logic/Byw2z4
-                                                       cortexm0/u_logic/Byw2z4
-    SLICE_X10Y115.A6     net (fanout=2)        0.022   cortexm0/u_logic/Byw2z4
-    SLICE_X10Y115.CLK    Tah         (-Th)    -0.190   cortexm0/u_logic/Byw2z4
-                                                       cortexm0/u_logic/Dnhvx41
-                                                       cortexm0/u_logic/Byw2z4
+    SLICE_X30Y89.AQ      Tcko                  0.200   cortexm0/u_logic/B6j2z4
+                                                       cortexm0/u_logic/B6j2z4
+    SLICE_X30Y89.A6      net (fanout=4)        0.030   cortexm0/u_logic/B6j2z4
+    SLICE_X30Y89.CLK     Tah         (-Th)    -0.190   cortexm0/u_logic/B6j2z4
+                                                       cortexm0/u_logic/K8ivx41
+                                                       cortexm0/u_logic/B6j2z4
     -------------------------------------------------  ---------------------------
-    Total                                      0.412ns (0.390ns logic, 0.022ns route)
-                                                       (94.7% logic, 5.3% route)
+    Total                                      0.420ns (0.390ns logic, 0.030ns route)
+                                                       (92.9% logic, 7.1% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point cortexm0/u_logic/Sow2z4 (SLICE_X10Y118.D6), 1 path
+Paths for end point cortexm0/u_logic/Rhi2z4 (SLICE_X26Y94.A6), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.413ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               cortexm0/u_logic/Sow2z4 (FF)
-  Destination:          cortexm0/u_logic/Sow2z4 (FF)
+Slack (hold path):      0.422ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               cortexm0/u_logic/Rhi2z4 (FF)
+  Destination:          cortexm0/u_logic/Rhi2z4 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.413ns (Levels of Logic = 1)
+  Data Path Delay:      0.422ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         clkm_BUFGP rising at 13.000ns
   Destination Clock:    clkm_BUFGP rising at 13.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: cortexm0/u_logic/Sow2z4 to cortexm0/u_logic/Sow2z4
+  Minimum Data Path at Fast Process Corner: cortexm0/u_logic/Rhi2z4 to cortexm0/u_logic/Rhi2z4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X10Y118.DQ     Tcko                  0.200   cortexm0/u_logic/Sow2z4
-                                                       cortexm0/u_logic/Sow2z4
-    SLICE_X10Y118.D6     net (fanout=2)        0.023   cortexm0/u_logic/Sow2z4
-    SLICE_X10Y118.CLK    Tah         (-Th)    -0.190   cortexm0/u_logic/Sow2z4
-                                                       cortexm0/u_logic/Tohvx41
-                                                       cortexm0/u_logic/Sow2z4
+    SLICE_X26Y94.AQ      Tcko                  0.200   cortexm0/u_logic/Rhi2z4
+                                                       cortexm0/u_logic/Rhi2z4
+    SLICE_X26Y94.A6      net (fanout=5)        0.032   cortexm0/u_logic/Rhi2z4
+    SLICE_X26Y94.CLK     Tah         (-Th)    -0.190   cortexm0/u_logic/Rhi2z4
+                                                       cortexm0/u_logic/Velvx4
+                                                       cortexm0/u_logic/Rhi2z4
     -------------------------------------------------  ---------------------------
-    Total                                      0.413ns (0.390ns logic, 0.023ns route)
-                                                       (94.4% logic, 5.6% route)
+    Total                                      0.422ns (0.390ns logic, 0.032ns route)
+                                                       (92.4% logic, 7.6% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point cortexm0/u_logic/Hak2z4 (SLICE_X34Y133.A6), 1 path
+Paths for end point cortexm0/u_logic/Iua3z4 (SLICE_X22Y77.D6), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.415ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               cortexm0/u_logic/Hak2z4 (FF)
-  Destination:          cortexm0/u_logic/Hak2z4 (FF)
+Slack (hold path):      0.424ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               cortexm0/u_logic/Iua3z4 (FF)
+  Destination:          cortexm0/u_logic/Iua3z4 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.415ns (Levels of Logic = 1)
+  Data Path Delay:      0.424ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         clkm_BUFGP rising at 13.000ns
   Destination Clock:    clkm_BUFGP rising at 13.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: cortexm0/u_logic/Hak2z4 to cortexm0/u_logic/Hak2z4
+  Minimum Data Path at Fast Process Corner: cortexm0/u_logic/Iua3z4 to cortexm0/u_logic/Iua3z4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X34Y133.AQ     Tcko                  0.200   cortexm0/u_logic/Hak2z4
-                                                       cortexm0/u_logic/Hak2z4
-    SLICE_X34Y133.A6     net (fanout=4)        0.025   cortexm0/u_logic/Hak2z4
-    SLICE_X34Y133.CLK    Tah         (-Th)    -0.190   cortexm0/u_logic/Hak2z4
-                                                       cortexm0/u_logic/Galvx41
-                                                       cortexm0/u_logic/Hak2z4
+    SLICE_X22Y77.DQ      Tcko                  0.200   cortexm0/u_logic/Iua3z4
+                                                       cortexm0/u_logic/Iua3z4
+    SLICE_X22Y77.D6      net (fanout=4)        0.034   cortexm0/u_logic/Iua3z4
+    SLICE_X22Y77.CLK     Tah         (-Th)    -0.190   cortexm0/u_logic/Iua3z4
+                                                       cortexm0/u_logic/Ypmvx41
+                                                       cortexm0/u_logic/Iua3z4
     -------------------------------------------------  ---------------------------
-    Total                                      0.415ns (0.390ns logic, 0.025ns route)
-                                                       (94.0% logic, 6.0% route)
+    Total                                      0.424ns (0.390ns logic, 0.034ns route)
+                                                       (92.0% logic, 8.0% route)
 
 --------------------------------------------------------------------------------
 
@@ -724,20 +730,20 @@ Slack: 11.361ns (period - min period limit)
   Min period limit: 1.639ns (610.128MHz) (Tockper)
   Physical resource: cm0_led_OBUF/CLK0
   Logical resource: cm0_led/CK0
-  Location pin: OLOGIC_X7Y173.CLK0
+  Location pin: OLOGIC_X3Y172.CLK0
   Clock network: clkm_BUFGP
 --------------------------------------------------------------------------------
 Slack: 12.570ns (period - min period limit)
   Period: 13.000ns
   Min period limit: 0.430ns (2325.581MHz) (Tcp)
-  Physical resource: cortexm0/u_logic/Zcn2z4/CLK
-  Logical resource: cortexm0/u_logic/Zcn2z4/CK
-  Location pin: SLICE_X6Y122.CLK
+  Physical resource: cortexm0/u_logic/Gji2z4/CLK
+  Logical resource: cortexm0/u_logic/Gji2z4/CK
+  Location pin: SLICE_X2Y77.CLK
   Clock network: clkm_BUFGP
 --------------------------------------------------------------------------------
 
 
-All constraints were met.
+1 constraint not met.
 
 
 Data Sheet report:
@@ -749,25 +755,25 @@ Clock to Setup on destination clock clkm
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clkm           |   12.843|         |         |         |
+clkm           |   13.393|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
 Timing summary:
 ---------------
 
-Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+Timing errors: 31  Score: 5019  (Setup/Max: 5019, Hold: 0)
 
-Constraints cover 212327201 paths, 0 nets, and 18404 connections
+Constraints cover 214572049 paths, 0 nets, and 18404 connections
 
 Design statistics:
-   Minimum period:  12.843ns{1}   (Maximum frequency:  77.863MHz)
+   Minimum period:  13.393ns{1}   (Maximum frequency:  74.666MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Tue Oct 25 02:03:59 2022 
+Analysis completed Tue Oct 25 22:07:07 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.15xf on Tue Oct 25 02:01:57 2022
+// Written by: Map P.15xf on Tue Oct 25 22:06:08 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -419,29 +419,38 @@ TIMEGRP clkm = BEL "cm0_led" BEL
         "cortexm0/u_logic/Kyi2z4" BEL "cortexm0/u_logic/Rhi2z4" BEL
         "cortexm0/u_logic/Wai2z4" BEL "cortexm0/u_logic/H9i2z4" BEL
         "cortexm0/u_logic/Pdi2z4" BEL "cortexm0/u_logic/Sgj2z4_1" BEL
-        "cortexm0/u_logic/Wai2z4_1" BEL "cortexm0/u_logic/Emi2z4_1" BEL
+        "cortexm0/u_logic/Wai2z4_1" BEL "cortexm0/u_logic/O5t2z4_1" BEL
         "cortexm0/u_logic/Fij2z4_1" BEL "cortexm0/u_logic/Npk2z4_1" BEL
-        "cortexm0/u_logic/Nsk2z4_1" BEL "cortexm0/u_logic/Ffj2z4_1" BEL
-        "cortexm0/u_logic/Sgj2z4_2" BEL "cortexm0/u_logic/Aok2z4_1" BEL
-        "cortexm0/u_logic/H3d3z4_1" BEL "cortexm0/u_logic/H3d3z4_2" BEL
+        "cortexm0/u_logic/Emi2z4_1" BEL "cortexm0/u_logic/Ffj2z4_1" BEL
+        "cortexm0/u_logic/Aok2z4_1" BEL "cortexm0/u_logic/Nsk2z4_1" BEL
+        "cortexm0/u_logic/Sgj2z4_2" BEL "cortexm0/u_logic/Ark2z4_1" BEL
+        "cortexm0/u_logic/Emi2z4_2" BEL "cortexm0/u_logic/T1d3z4_1" BEL
+        "cortexm0/u_logic/T1d3z4_2" BEL "cortexm0/u_logic/H3d3z4_1" BEL
+        "cortexm0/u_logic/H3d3z4_2" BEL "cortexm0/u_logic/Wzy2z4_1" BEL
+        "cortexm0/u_logic/Wzy2z4_2" BEL "cortexm0/u_logic/Rni2z4_1" BEL
+        "cortexm0/u_logic/Rni2z4_2" BEL "cortexm0/u_logic/Yaz2z4_1" BEL
+        "cortexm0/u_logic/Yaz2z4_2" BEL "cortexm0/u_logic/Yaz2z4_3" BEL
         "cortexm0/u_logic/Svk2z4_1" BEL "cortexm0/u_logic/Svk2z4_2" BEL
-        "cortexm0/u_logic/Yaz2z4_1" BEL "cortexm0/u_logic/Yaz2z4_2" BEL
-        "cortexm0/u_logic/T1d3z4_1" BEL "cortexm0/u_logic/T1d3z4_2" BEL
-        "cortexm0/u_logic/Wzy2z4_1" BEL "cortexm0/u_logic/Wzy2z4_2" BEL
-        "cortexm0/u_logic/Fgm2z4_1" BEL "cortexm0/u_logic/Fgm2z4_2" BEL
-        "cortexm0/u_logic/Fgm2z4_3" BEL "cortexm0/u_logic/Rni2z4_1" BEL
-        "cortexm0/u_logic/Ffj2z4_2" BEL "cortexm0/u_logic/Ark2z4_1" BEL
-        "cortexm0/u_logic/O5t2z4_1" BEL "cortexm0/u_logic/Nsk2z4_2" BEL
-        "cortexm0/u_logic/Emi2z4_2" BEL "cortexm0/u_logic/Aok2z4_2" BEL
-        "cortexm0/u_logic/Npk2z4_2" BEL "cortexm0/u_logic/Yaz2z4_3" BEL
-        "cortexm0/u_logic/Yaz2z4_4" BEL "cortexm0/u_logic/Svk2z4_3" BEL
-        "cortexm0/u_logic/Svk2z4_4" BEL "cortexm0/u_logic/Svk2z4_5" BEL
-        "cortexm0/u_logic/H3d3z4_3" BEL "cortexm0/u_logic/H3d3z4_4" BEL
-        "cortexm0/u_logic/H3d3z4_5" BEL "cortexm0/u_logic/Sjj2z4_1" BEL
+        "cortexm0/u_logic/Svk2z4_3" BEL "cortexm0/u_logic/Fgm2z4_1" BEL
+        "cortexm0/u_logic/Fgm2z4_2" BEL "cortexm0/u_logic/Fgm2z4_3" BEL
+        "cortexm0/u_logic/Fgm2z4_4" BEL "cortexm0/u_logic/Sjj2z4_1" BEL
         "cortexm0/u_logic/Sjj2z4_2" BEL "cortexm0/u_logic/Sjj2z4_3" BEL
         "cortexm0/u_logic/Sjj2z4_4" BEL "cortexm0/u_logic/M1j2z4_1" BEL
-        "cortexm0/u_logic/Tki2z4_1" BEL "cortexm0/u_logic/T1d3z4_3" BEL
-        "cortexm0/u_logic/T1d3z4_4" BEL "clkm_BUFGP/BUFG";
+        "cortexm0/u_logic/Tki2z4_1" BEL "cortexm0/u_logic/L8t2z4_1" BEL
+        "cortexm0/u_logic/Hyy2z4_1" BEL "cortexm0/u_logic/H9i2z4_1" BEL
+        "cortexm0/u_logic/Nsk2z4_2" BEL "cortexm0/u_logic/Ffj2z4_2" BEL
+        "cortexm0/u_logic/U2x2z4_1" BEL "cortexm0/u_logic/Fij2z4_2" BEL
+        "cortexm0/u_logic/Fij2z4_3" BEL "cortexm0/u_logic/Aok2z4_2" BEL
+        "cortexm0/u_logic/Aok2z4_3" BEL "cortexm0/u_logic/Npk2z4_2" BEL
+        "cortexm0/u_logic/Npk2z4_3" BEL "cortexm0/u_logic/O5t2z4_2" BEL
+        "cortexm0/u_logic/O5t2z4_3" BEL "cortexm0/u_logic/Sgj2z4_3" BEL
+        "cortexm0/u_logic/Sgj2z4_4" BEL "cortexm0/u_logic/Nqy2z4_1" BEL
+        "cortexm0/u_logic/Yaz2z4_4" BEL "cortexm0/u_logic/Yaz2z4_5" BEL
+        "cortexm0/u_logic/T1d3z4_3" BEL "cortexm0/u_logic/T1d3z4_4" BEL
+        "cortexm0/u_logic/T1d3z4_5" BEL "cortexm0/u_logic/Zoy2z4_1" BEL
+        "cortexm0/u_logic/H3d3z4_3" BEL "cortexm0/u_logic/H3d3z4_4" BEL
+        "cortexm0/u_logic/H3d3z4_5" BEL "cortexm0/u_logic/A4t2z4_1" BEL
+        "clkm_BUFGP/BUFG";
 TS_clkm = PERIOD TIMEGRP "clkm" 13 ns HIGH 50%;
 SCHEMATIC END;
 

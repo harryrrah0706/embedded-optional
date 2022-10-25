@@ -1,0 +1,8 @@
+vhdl grlib "../grlib-gpl-1.1.0-b4108/lib/grlib/version.vhd"
+vhdl grlib "../grlib-gpl-1.1.0-b4108/lib/grlib/stdlib.vhd"
+vhdl grlib "../grlib-gpl-1.1.0-b4108/lib/grlib/config.vhd"
+vhdl grlib "../grlib-gpl-1.1.0-b4108/lib/grlib/amba.vhd"
+vhdl techmap "../grlib-gpl-1.1.0-b4108/lib/techmap/gencomp.vhd"
+vhdl grlib "../grlib-gpl-1.1.0-b4108/lib/grlib/devices.vhd"
+vhdl gaisler "../grlib-gpl-1.1.0-b4108/lib/gaisler/misc.vhd"
+vhdl work "../state_machine.vhd"

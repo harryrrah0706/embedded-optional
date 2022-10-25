@@ -3,13 +3,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: cm0_wrapper.prj
@@ -1062,22 +1062,22 @@ Synthesizing Unit <cortexm0ds_logic>.
     Found 30-bit adder for signal <n16534> created at line 2072.
     Found 34-bit adder for signal <Pri3z4> created at line 2073.
     Found 34-bit adder for signal <n16585> created at line 2082.
-    WARNING:Xst:2404 -  FFs/Latches <Q4h3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
-    WARNING:Xst:2404 -  FFs/Latches <W5c3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
+    WARNING:Xst:2404 -  FFs/Latches <Q0f3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
     WARNING:Xst:2404 -  FFs/Latches <I6h3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
-    WARNING:Xst:2404 -  FFs/Latches <Yvb3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
     WARNING:Xst:2404 -  FFs/Latches <Qsb3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
     WARNING:Xst:2404 -  FFs/Latches <O2c3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
-    WARNING:Xst:2404 -  FFs/Latches <Jje3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
     WARNING:Xst:2404 -  FFs/Latches <Gzb3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
-    WARNING:Xst:2404 -  FFs/Latches <E9c3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
-    WARNING:Xst:2404 -  FFs/Latches <Rnb3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
-    WARNING:Xst:2404 -  FFs/Latches <W8r2z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
     WARNING:Xst:2404 -  FFs/Latches <C7f3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
+    WARNING:Xst:2404 -  FFs/Latches <Jje3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
+    WARNING:Xst:2404 -  FFs/Latches <Yvb3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
+    WARNING:Xst:2404 -  FFs/Latches <Q4h3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
+    WARNING:Xst:2404 -  FFs/Latches <E9c3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
+    WARNING:Xst:2404 -  FFs/Latches <W8r2z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
+    WARNING:Xst:2404 -  FFs/Latches <Rnb3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
     WARNING:Xst:2404 -  FFs/Latches <Zqb3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
     WARNING:Xst:2404 -  FFs/Latches <Etq2z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
     WARNING:Xst:2404 -  FFs/Latches <Qnn2z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
-    WARNING:Xst:2404 -  FFs/Latches <Q0f3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
+    WARNING:Xst:2404 -  FFs/Latches <W5c3z4<0:0>> (without init value) have a constant value of 0 in block <cortexm0ds_logic>.
     Summary:
 	inferred   6 Adder/Subtractor(s).
 	inferred 824 D-type flip-flop(s).
@@ -1099,9 +1099,11 @@ WARNING:Xst:647 - Input <dmao_active> is never used. This port will be preserved
 WARNING:Xst:647 - Input <dmao_retry> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <dmao_mexc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <current_state>.
+    Found 2-bit comparator lessequal for signal <n0004> created at line 97
     Summary:
 	inferred   1 D-type flip-flop(s).
-	inferred   4 Multiplexer(s).
+	inferred   1 Comparator(s).
+	inferred   3 Multiplexer(s).
 Unit <state_machine> synthesized.
 
 Synthesizing Unit <ahbmst>.
@@ -1151,8 +1153,10 @@ Macro Statistics
 # Registers                                            : 827
  1-bit register                                        : 826
  4-bit register                                        : 1
-# Multiplexers                                         : 275
- 1-bit 2-to-1 multiplexer                              : 270
+# Comparators                                          : 1
+ 2-bit comparator lessequal                            : 1
+# Multiplexers                                         : 274
+ 1-bit 2-to-1 multiplexer                              : 269
  2-bit 2-to-1 multiplexer                              : 3
  3-bit 2-to-1 multiplexer                              : 2
 # Xors                                                 : 59
@@ -1178,8 +1182,10 @@ Macro Statistics
  9-bit subtractor                                      : 1
 # Registers                                            : 830
  Flip-Flops                                            : 830
-# Multiplexers                                         : 250
- 1-bit 2-to-1 multiplexer                              : 245
+# Comparators                                          : 1
+ 2-bit comparator lessequal                            : 1
+# Multiplexers                                         : 249
+ 1-bit 2-to-1 multiplexer                              : 244
  2-bit 2-to-1 multiplexer                              : 3
  3-bit 2-to-1 multiplexer                              : 2
 # Xors                                                 : 59
@@ -1203,26 +1209,33 @@ WARNING:Xst:2677 - Node <cortexm0/u_logic/Ypi3z4> of sequential type is unconnec
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block cm0_wrapper, actual ratio is 5.
-FlipFlop cortexm0/u_logic/Aok2z4 has been replicated 2 time(s)
+FlipFlop cortexm0/u_logic/A4t2z4 has been replicated 1 time(s)
+FlipFlop cortexm0/u_logic/Aok2z4 has been replicated 3 time(s)
 FlipFlop cortexm0/u_logic/Ark2z4 has been replicated 1 time(s)
 FlipFlop cortexm0/u_logic/Emi2z4 has been replicated 2 time(s)
 FlipFlop cortexm0/u_logic/Ffj2z4 has been replicated 2 time(s)
-FlipFlop cortexm0/u_logic/Fgm2z4 has been replicated 3 time(s)
-FlipFlop cortexm0/u_logic/Fij2z4 has been replicated 1 time(s)
+FlipFlop cortexm0/u_logic/Fgm2z4 has been replicated 4 time(s)
+FlipFlop cortexm0/u_logic/Fij2z4 has been replicated 3 time(s)
 FlipFlop cortexm0/u_logic/H3d3z4 has been replicated 5 time(s)
+FlipFlop cortexm0/u_logic/H9i2z4 has been replicated 1 time(s)
+FlipFlop cortexm0/u_logic/Hyy2z4 has been replicated 1 time(s)
+FlipFlop cortexm0/u_logic/L8t2z4 has been replicated 1 time(s)
 FlipFlop cortexm0/u_logic/M1j2z4 has been replicated 1 time(s)
-FlipFlop cortexm0/u_logic/Npk2z4 has been replicated 2 time(s)
+FlipFlop cortexm0/u_logic/Npk2z4 has been replicated 3 time(s)
+FlipFlop cortexm0/u_logic/Nqy2z4 has been replicated 1 time(s)
 FlipFlop cortexm0/u_logic/Nsk2z4 has been replicated 2 time(s)
-FlipFlop cortexm0/u_logic/O5t2z4 has been replicated 1 time(s)
-FlipFlop cortexm0/u_logic/Rni2z4 has been replicated 1 time(s)
-FlipFlop cortexm0/u_logic/Sgj2z4 has been replicated 2 time(s)
+FlipFlop cortexm0/u_logic/O5t2z4 has been replicated 3 time(s)
+FlipFlop cortexm0/u_logic/Rni2z4 has been replicated 2 time(s)
+FlipFlop cortexm0/u_logic/Sgj2z4 has been replicated 4 time(s)
 FlipFlop cortexm0/u_logic/Sjj2z4 has been replicated 4 time(s)
-FlipFlop cortexm0/u_logic/Svk2z4 has been replicated 5 time(s)
-FlipFlop cortexm0/u_logic/T1d3z4 has been replicated 4 time(s)
+FlipFlop cortexm0/u_logic/Svk2z4 has been replicated 3 time(s)
+FlipFlop cortexm0/u_logic/T1d3z4 has been replicated 5 time(s)
 FlipFlop cortexm0/u_logic/Tki2z4 has been replicated 1 time(s)
+FlipFlop cortexm0/u_logic/U2x2z4 has been replicated 1 time(s)
 FlipFlop cortexm0/u_logic/Wai2z4 has been replicated 1 time(s)
 FlipFlop cortexm0/u_logic/Wzy2z4 has been replicated 2 time(s)
-FlipFlop cortexm0/u_logic/Yaz2z4 has been replicated 4 time(s)
+FlipFlop cortexm0/u_logic/Yaz2z4 has been replicated 5 time(s)
+FlipFlop cortexm0/u_logic/Zoy2z4 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -1230,8 +1243,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 873
- Flip-Flops                                            : 873
+# Registers                                            : 890
+ Flip-Flops                                            : 890
 
 =========================================================================
 
@@ -1254,26 +1267,26 @@ Top Level Output File Name         : cm0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3771
+# BELS                             : 3761
 #      GND                         : 1
-#      INV                         : 26
+#      INV                         : 27
 #      LUT1                        : 91
-#      LUT2                        : 166
-#      LUT3                        : 165
-#      LUT4                        : 324
-#      LUT5                        : 516
-#      LUT6                        : 2081
+#      LUT2                        : 159
+#      LUT3                        : 164
+#      LUT4                        : 318
+#      LUT5                        : 506
+#      LUT6                        : 2104
 #      MUXCY                       : 146
-#      MUXF7                       : 105
+#      MUXF7                       : 95
 #      VCC                         : 1
 #      XORCY                       : 149
-# FlipFlops/Latches                : 873
+# FlipFlops/Latches                : 890
 #      FD                          : 3
 #      FD_1                        : 1
-#      FDC                         : 82
+#      FDC                         : 90
 #      FDCE                        : 51
-#      FDP                         : 156
-#      FDPE                        : 579
+#      FDP                         : 163
+#      FDPE                        : 581
 #      FDR                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -1288,15 +1301,15 @@ Selected Device : 6slx100fgg676-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             872  out of  126576     0%  
+ Number of Slice Registers:             889  out of  126576     0%  
  Number of Slice LUTs:                 3369  out of  63288     5%  
     Number used as Logic:              3369  out of  63288     5%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3920
-   Number with an unused Flip Flop:    3048  out of   3920    77%  
-   Number with an unused LUT:           551  out of   3920    14%  
-   Number of fully used LUT-FF pairs:   321  out of   3920     8%  
+ Number of LUT Flip Flop pairs used:   3938
+   Number with an unused Flip Flop:    3049  out of   3938    77%  
+   Number with an unused LUT:           569  out of   3938    14%  
+   Number of fully used LUT-FF pairs:   320  out of   3938     8%  
    Number of unique control sets:        40
 
 IO Utilization: 
@@ -1328,7 +1341,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clkm                               | BUFGP                  | 873   |
+clkm                               | BUFGP                  | 890   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -1339,9 +1352,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 14.739ns (Maximum Frequency: 67.846MHz)
-   Minimum input arrival time before clock: 10.735ns
-   Maximum output required time after clock: 16.894ns
+   Minimum period: 14.799ns (Maximum Frequency: 67.574MHz)
+   Minimum input arrival time before clock: 10.553ns
+   Maximum output required time after clock: 14.129ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1350,44 +1363,44 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clkm'
-  Clock period: 14.739ns (frequency: 67.846MHz)
-  Total number of paths / destination ports: 212327201 / 1502
+  Clock period: 14.799ns (frequency: 67.574MHz)
+  Total number of paths / destination ports: 214572049 / 1521
 -------------------------------------------------------------------------
-Delay:               14.739ns (Levels of Logic = 14)
-  Source:            cortexm0/u_logic/Fed3z4 (FF)
-  Destination:       cortexm0/u_logic/Tdp2z4 (FF)
+Delay:               14.799ns (Levels of Logic = 14)
+  Source:            cortexm0/u_logic/Vve3z4 (FF)
+  Destination:       cortexm0/u_logic/Qcy2z4 (FF)
   Source Clock:      clkm rising
   Destination Clock: clkm rising
 
-  Data Path: cortexm0/u_logic/Fed3z4 to cortexm0/u_logic/Tdp2z4
+  Data Path: cortexm0/u_logic/Vve3z4 to cortexm0/u_logic/Qcy2z4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             5   0.447   1.059  cortexm0/u_logic/Fed3z4 (cortexm0/u_logic/Fed3z4)
-     LUT6:I1->O            2   0.203   0.617  cortexm0/u_logic/D0wwx4<2>1 (cortexm0/u_logic/D0wwx4<2>)
-     LUT3:I2->O            2   0.205   0.721  cortexm0/u_logic/D0wwx4<2>2 (cortexm0/u_logic/D0wwx4)
-     LUT6:I4->O            5   0.203   0.715  cortexm0/u_logic/Cjuwx43 (cortexm0/u_logic/Cjuwx43)
-     LUT5:I4->O           19   0.205   1.072  cortexm0/u_logic/Cjuwx44 (cortexm0/u_logic/Cjuwx4)
-     LUT5:I4->O            3   0.205   0.651  cortexm0/u_logic/U5pwx41 (cortexm0/u_logic/U5pwx41)
-     LUT5:I4->O           17   0.205   1.027  cortexm0/u_logic/Mmux_A6zwx411 (cortexm0/u_logic/A6zwx4)
-     MUXF7:S->O            1   0.148   0.684  cortexm0/u_logic/R3hvx4_N2zwx4_AND_4553_o_SW0_SW3 (N1132)
-     LUT6:I4->O            2   0.203   0.845  cortexm0/u_logic/R3hvx4_N2zwx4_AND_4553_o_SW2 (N724)
-     LUT6:I3->O            7   0.205   0.774  cortexm0/u_logic/E5owx42 (cortexm0/u_logic/E5owx42)
-     LUT6:I5->O           15   0.205   0.982  cortexm0/u_logic/E5owx44 (cortexm0/u_logic/E5owx4)
-     LUT6:I5->O            2   0.205   0.845  cortexm0/u_logic/Tauwx4_Abuwx4_AND_4036_o5 (cortexm0/u_logic/Tauwx4_Abuwx4_AND_4036_o7)
-     LUT6:I3->O            7   0.205   0.774  cortexm0/u_logic/Tauwx4_Abuwx4_AND_4036_o13 (cortexm0/u_logic/Tauwx4_Abuwx4_AND_4036_o)
-     LUT6:I5->O            2   0.205   0.617  cortexm0/u_logic/Vcuvx43 (cortexm0/u_logic/Vcuvx43)
-     LUT6:I5->O            1   0.205   0.000  cortexm0/u_logic/Wamvx41 (cortexm0/u_logic/Wamvx4)
-     FDC:D                     0.102          cortexm0/u_logic/Tdp2z4
+     FDC:C->Q              6   0.447   1.109  cortexm0/u_logic/Vve3z4 (cortexm0/u_logic/Vve3z4)
+     LUT6:I0->O            2   0.203   0.617  cortexm0/u_logic/Nyvwx4<8>1 (cortexm0/u_logic/Nyvwx4<8>)
+     LUT3:I2->O            7   0.205   0.878  cortexm0/u_logic/Nyvwx4<8>2 (cortexm0/u_logic/Nyvwx4)
+     LUT5:I3->O            1   0.203   0.684  cortexm0/u_logic/Viuwx44 (cortexm0/u_logic/Viuwx44)
+     LUT6:I4->O            9   0.203   0.830  cortexm0/u_logic/Viuwx46 (cortexm0/u_logic/Viuwx4)
+     LUT6:I5->O            6   0.205   0.745  cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o2 (cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o2)
+     LUT6:I5->O            2   0.205   0.617  cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o3_1 (cortexm0/u_logic/Odzwx4_Vdzwx4_AND_4574_o3)
+     LUT6:I5->O            6   0.205   0.973  cortexm0/u_logic/C7zwx4_J7zwx4_AND_4564_o2 (cortexm0/u_logic/C7zwx4_J7zwx4_AND_4564_o2)
+     LUT6:I3->O            9   0.205   0.830  cortexm0/u_logic/Vzywx43 (cortexm0/u_logic/Vzywx4)
+     LUT6:I5->O            8   0.205   0.803  cortexm0/u_logic/E5owx42 (cortexm0/u_logic/E5owx42)
+     LUT6:I5->O           14   0.205   0.958  cortexm0/u_logic/E5owx44 (cortexm0/u_logic/E5owx4)
+     LUT6:I5->O            2   0.205   0.721  cortexm0/u_logic/N4rvx41 (cortexm0/u_logic/N4rvx4)
+     LUT5:I3->O            3   0.203   0.879  cortexm0/u_logic/C9rvx41 (cortexm0/u_logic/C9rvx41)
+     LUT6:I3->O            6   0.205   0.745  cortexm0/u_logic/C9rvx46 (cortexm0/u_logic/C9rvx4)
+     LUT6:I5->O            1   0.205   0.000  cortexm0/u_logic/U8nvx42 (cortexm0/u_logic/U8nvx4)
+     FDP:D                     0.102          cortexm0/u_logic/Bdm2z4
     ----------------------------------------
-    Total                     14.739ns (3.356ns logic, 11.383ns route)
-                                       (22.8% logic, 77.2% route)
+    Total                     14.799ns (3.411ns logic, 11.388ns route)
+                                       (23.0% logic, 77.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clkm'
-  Total number of paths / destination ports: 22286 / 2124
+  Total number of paths / destination ports: 22648 / 2158
 -------------------------------------------------------------------------
-Offset:              10.735ns (Levels of Logic = 7)
+Offset:              10.553ns (Levels of Logic = 7)
   Source:            ahbmi_hready (PAD)
   Destination:       cortexm0/u_logic/Jux2z4 (FF)
   Destination Clock: clkm rising
@@ -1396,74 +1409,45 @@ Offset:              10.735ns (Levels of Logic = 7)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            36   1.222   1.577  ahbmi_hready_IBUF (ahbmi_hready_IBUF)
-     LUT4:I1->O           73   0.205   2.064  ahblite_bridge/state_machine_1/Mmux_hready11 (hready)
-     LUT6:I0->O           36   0.203   1.713  cortexm0/u_logic/G6pvx41 (cortexm0/u_logic/G6pvx4)
+     IBUF:I->O            27   1.222   1.449  ahbmi_hready_IBUF (ahbmi_hready_IBUF)
+     LUT4:I1->O           67   0.205   2.024  ahblite_bridge/state_machine_1/Mmux_hready11 (hready)
+     LUT6:I0->O           35   0.203   1.699  cortexm0/u_logic/G6pvx41 (cortexm0/u_logic/G6pvx4)
      LUT6:I0->O           32   0.203   1.292  cortexm0/u_logic/G6pvx4_Alywx4_AND_4511_o1 (cortexm0/u_logic/G6pvx4_Alywx4_AND_4511_o)
-     LUT6:I5->O            2   0.205   0.617  cortexm0/u_logic/Thhvx4_SW0_SW1 (N395)
-     LUT6:I5->O            1   0.205   0.924  cortexm0/u_logic/Wzpvx44_SW3 (N653)
+     LUT6:I5->O            2   0.205   0.617  cortexm0/u_logic/Thhvx4_SW0_SW1 (N399)
+     LUT6:I5->O            1   0.205   0.924  cortexm0/u_logic/Wzpvx44_SW3 (N635)
      LUT6:I1->O            1   0.203   0.000  cortexm0/u_logic/Thhvx4 (cortexm0/u_logic/Thhvx4)
      FDP:D                     0.102          cortexm0/u_logic/Jux2z4
     ----------------------------------------
-    Total                     10.735ns (2.548ns logic, 8.187ns route)
-                                       (23.7% logic, 76.3% route)
+    Total                     10.553ns (2.548ns logic, 8.005ns route)
+                                       (24.1% logic, 75.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clkm'
-  Total number of paths / destination ports: 6969711 / 70
+  Total number of paths / destination ports: 2777787 / 70
 -------------------------------------------------------------------------
-Offset:              16.894ns (Levels of Logic = 39)
-  Source:            cortexm0/u_logic/Sgj2z4 (FF)
-  Destination:       ahbmo_htrans<1> (PAD)
+Offset:              14.129ns (Levels of Logic = 10)
+  Source:            cortexm0/u_logic/Tki2z4 (FF)
+  Destination:       ahbmo_haddr<1> (PAD)
   Source Clock:      clkm rising
 
-  Data Path: cortexm0/u_logic/Sgj2z4 to ahbmo_htrans<1>
+  Data Path: cortexm0/u_logic/Tki2z4 to ahbmo_haddr<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q            235   0.447   2.063  cortexm0/u_logic/Sgj2z4 (cortexm0/u_logic/Sgj2z4)
-     LUT2:I1->O            1   0.205   0.580  cortexm0/u_logic/Mmux_Akewx4111 (cortexm0/u_logic/Mmux_Akewx411)
-     LUT6:I5->O            1   0.205   0.684  cortexm0/u_logic/D9c2z4_K9c2z4_AND_6705_o5 (cortexm0/u_logic/D9c2z4_K9c2z4_AND_6705_o5)
-     LUT4:I2->O            1   0.203   0.580  cortexm0/u_logic/D9c2z4_K9c2z4_AND_6705_o6 (cortexm0/u_logic/D9c2z4_K9c2z4_AND_6705_o6)
-     LUT6:I5->O            3   0.205   0.651  cortexm0/u_logic/D9c2z4_K9c2z4_AND_6705_o14 (cortexm0/u_logic/D9c2z4_K9c2z4_AND_6705_o14)
-     LUT5:I4->O           44   0.205   1.463  cortexm0/u_logic/D9c2z4_K9c2z4_AND_6705_o27 (cortexm0/u_logic/D9c2z4_K9c2z4_AND_6705_o)
-     LUT6:I5->O           16   0.205   1.109  cortexm0/u_logic/I4gvx4_B8c2z4_AND_6699_o1 (cortexm0/u_logic/I4gvx4_B8c2z4_AND_6699_o)
-     LUT5:I3->O            1   0.203   0.000  cortexm0/u_logic/Madd_n16534_lut<0> (cortexm0/u_logic/Madd_n16534_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  cortexm0/u_logic/Madd_n16534_cy<0> (cortexm0/u_logic/Madd_n16534_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<1> (cortexm0/u_logic/Madd_n16534_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<2> (cortexm0/u_logic/Madd_n16534_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<3> (cortexm0/u_logic/Madd_n16534_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<4> (cortexm0/u_logic/Madd_n16534_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<5> (cortexm0/u_logic/Madd_n16534_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<6> (cortexm0/u_logic/Madd_n16534_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<7> (cortexm0/u_logic/Madd_n16534_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<8> (cortexm0/u_logic/Madd_n16534_cy<8>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<9> (cortexm0/u_logic/Madd_n16534_cy<9>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<10> (cortexm0/u_logic/Madd_n16534_cy<10>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<11> (cortexm0/u_logic/Madd_n16534_cy<11>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<12> (cortexm0/u_logic/Madd_n16534_cy<12>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<13> (cortexm0/u_logic/Madd_n16534_cy<13>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<14> (cortexm0/u_logic/Madd_n16534_cy<14>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<15> (cortexm0/u_logic/Madd_n16534_cy<15>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<16> (cortexm0/u_logic/Madd_n16534_cy<16>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<17> (cortexm0/u_logic/Madd_n16534_cy<17>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<18> (cortexm0/u_logic/Madd_n16534_cy<18>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<19> (cortexm0/u_logic/Madd_n16534_cy<19>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<20> (cortexm0/u_logic/Madd_n16534_cy<20>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<21> (cortexm0/u_logic/Madd_n16534_cy<21>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<22> (cortexm0/u_logic/Madd_n16534_cy<22>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<23> (cortexm0/u_logic/Madd_n16534_cy<23>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<24> (cortexm0/u_logic/Madd_n16534_cy<24>)
-     MUXCY:CI->O           1   0.019   0.000  cortexm0/u_logic/Madd_n16534_cy<25> (cortexm0/u_logic/Madd_n16534_cy<25>)
-     XORCY:CI->O           2   0.180   0.617  cortexm0/u_logic/Madd_n16534_xor<26> (cortexm0/u_logic/n16534<26>)
-     LUT6:I5->O            3   0.205   0.879  cortexm0/u_logic/V2qvx41 (cortexm0/u_logic/V2qvx4)
-     LUT3:I0->O            1   0.205   0.808  cortexm0/u_logic/htrans_o<1>_SW0 (N46)
-     LUT6:I3->O            4   0.205   0.788  cortexm0/u_logic/htrans_o<1> (htrans<1>)
-     LUT3:I1->O            1   0.203   0.579  ahblite_bridge/ahbmst_1/Mmux_comb.htrans21 (ahbmo_htrans_1_OBUF)
-     OBUF:I->O                 2.571          ahbmo_htrans_1_OBUF (ahbmo_htrans<1>)
+     FDC:C->Q            224   0.447   2.060  cortexm0/u_logic/Tki2z4 (cortexm0/u_logic/Tki2z4)
+     LUT2:I1->O            6   0.205   0.745  cortexm0/u_logic/Bdqvx41 (cortexm0/u_logic/Bdqvx4)
+     LUT6:I5->O            1   0.205   0.580  cortexm0/u_logic/D9c2z4_K9c2z4_AND_6705_o19 (cortexm0/u_logic/D9c2z4_K9c2z4_AND_6705_o19)
+     LUT6:I5->O            3   0.205   0.755  cortexm0/u_logic/D9c2z4_K9c2z4_AND_6705_o22 (cortexm0/u_logic/D9c2z4_K9c2z4_AND_6705_o22)
+     LUT5:I3->O           43   0.203   1.449  cortexm0/u_logic/D9c2z4_K9c2z4_AND_6705_o27 (cortexm0/u_logic/D9c2z4_K9c2z4_AND_6705_o)
+     LUT6:I5->O           15   0.205   1.086  cortexm0/u_logic/I4gvx4_B8c2z4_AND_6699_o1 (cortexm0/u_logic/I4gvx4_B8c2z4_AND_6699_o)
+     LUT6:I4->O            1   0.203   0.580  cortexm0/u_logic/Lma2z4_Sma2z4_AND_6530_o2 (cortexm0/u_logic/Lma2z4_Sma2z4_AND_6530_o2)
+     LUT6:I5->O            1   0.205   0.580  cortexm0/u_logic/Z5pvx45_SW0 (N791)
+     LUT6:I5->O           10   0.205   0.857  cortexm0/u_logic/Lma2z4_Sma2z4_AND_6530_o3 (cortexm0/u_logic/Lma2z4_Sma2z4_AND_6530_o)
+     LUT3:I2->O            1   0.205   0.579  cortexm0/u_logic/haddr_o<1>1 (haddr<1>)
+     OBUF:I->O                 2.571          ahbmo_haddr_1_OBUF (ahbmo_haddr<1>)
     ----------------------------------------
-    Total                     16.894ns (6.094ns logic, 10.800ns route)
-                                       (36.1% logic, 63.9% route)
+    Total                     14.129ns (4.859ns logic, 9.270ns route)
+                                       (34.4% logic, 65.6% route)
 
 =========================================================================
 
@@ -1475,18 +1459,18 @@ Clock to Setup on destination clock clkm
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clkm           |   14.739|         |         |         |
+clkm           |   14.799|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 31.00 secs
-Total CPU time to Xst completion: 31.09 secs
+Total REAL time to Xst completion: 37.00 secs
+Total CPU time to Xst completion: 36.82 secs
  
 --> 
 
-Total memory usage is 4732652 kilobytes
+Total memory usage is 4749756 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   61 (   0 filtered)
