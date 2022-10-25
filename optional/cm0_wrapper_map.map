@@ -11,7 +11,7 @@ Target Device  : xc6slx100
 Target Package : fgg676
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Oct 25 01:21:59 2022
+Mapped Date    : Tue Oct 25 02:00:54 2022
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
@@ -70,25 +70,25 @@ Phase 8.5  Local Placement Optimization (Checksum:95dee6d8) REAL time: 32 secs
 
 Phase 9.8  Global Placement
 ...........................
-..................................................
-.........................................................................
-..................
-Phase 9.8  Global Placement (Checksum:20a68af8) REAL time: 40 secs 
+................................................................................................
+...........................................................................................................................................................
+...................................
+Phase 9.8  Global Placement (Checksum:970d5760) REAL time: 41 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:20a68af8) REAL time: 40 secs 
+Phase 10.5  Local Placement Optimization (Checksum:970d5760) REAL time: 41 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:784a6cf2) REAL time: 53 secs 
+Phase 11.18  Placement Optimization (Checksum:53bb6645) REAL time: 1 mins 1 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:784a6cf2) REAL time: 53 secs 
+Phase 12.5  Local Placement Optimization (Checksum:53bb6645) REAL time: 1 mins 1 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:93361b9c) REAL time: 53 secs 
+Phase 13.34  Placement Validation (Checksum:b6568fc1) REAL time: 1 mins 1 secs 
 
-Total REAL time to Placer completion: 53 secs 
-Total CPU  time to Placer completion: 53 secs 
+Total REAL time to Placer completion: 1 mins 1 secs 
+Total CPU  time to Placer completion: 1 mins 1 secs 
 Running post-placement packing...
 Writing output files...
 
@@ -117,12 +117,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,222 out of  15,822    7%
+  Number of occupied Slices:                 1,122 out of  15,822    7%
   Nummber of MUXCYs used:                      156 out of  31,644    1%
-  Number of LUT Flip Flop pairs used:        3,394
-    Number with an unused Flip Flop:         2,527 out of   3,394   74%
-    Number with an unused LUT:                 238 out of   3,394    7%
-    Number of fully used LUT-FF pairs:         629 out of   3,394   18%
+  Number of LUT Flip Flop pairs used:        3,299
+    Number with an unused Flip Flop:         2,436 out of   3,299   73%
+    Number with an unused LUT:                 143 out of   3,299    4%
+    Number of fully used LUT-FF pairs:         720 out of   3,299   21%
     Number of unique control sets:              39
     Number of slice register sites lost
       to control set restrictions:              96 out of 126,576    1%
@@ -166,9 +166,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                4.76
 
-Peak Memory Usage:  4805 MB
-Total REAL time to MAP completion:  54 secs 
-Total CPU time to MAP completion:   54 secs 
+Peak Memory Usage:  4779 MB
+Total REAL time to MAP completion:  1 mins 3 secs 
+Total CPU time to MAP completion:   1 mins 2 secs 
 
 Mapping completed.
 See MAP report file "cm0_wrapper_map.mrp" for details.

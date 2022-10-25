@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-10-25T01:23:28</DateModified>
+  <DateModified>2022-10-25T02:04:15</DateModified>
   <ModuleName>cm0_wrapper</ModuleName>
-  <SummaryTimeStamp>2022-10-25T01:23:22</SummaryTimeStamp>
+  <SummaryTimeStamp>2022-10-25T02:04:01</SummaryTimeStamp>
   <SavedFilePath>C:/Users/fx19583/embedded optional/optional/iseconfig/cm0_wrapper.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/fx19583/embedded optional/optional</ImplementationReportsDirectory>
-  <DateInitialized>2022-10-25T00:46:31</DateInitialized>
+  <DateInitialized>2022-10-25T01:32:21</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
@@ -19,7 +19,7 @@
     <toc-item title="Detailed Reports" target="Detailed Reports" />
    </view>
    <view inputState="Unknown" program="implementation" contextTags="FPGA_ONLY" hidden="true" type="HTML" file="cm0_wrapper_envsettings.html" label="System Settings" />
-   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="cm0_wrapper_map.xrpt" showConstraints="0" label="IOB Properties" />
+   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="cm0_wrapper_map.xrpt" label="IOB Properties" />
    <view inputState="Translated" program="map" contextTags="FPGA_ONLY" hidden="true" type="Control_Sets" file="cm0_wrapper_map.xrpt" label="Control Set Information" />
    <view inputState="Translated" program="map" locator="MAP_MODULE_HIERARCHY" contextTags="FPGA_ONLY" type="Module_Utilization" file="cm0_wrapper_map.xrpt" label="Module Level Utilization" />
    <view inputState="Mapped" program="par" locator="CONSTRAINT_TABLE" contextTags="FPGA_ONLY" type="ConstraintsData" file="cm0_wrapper.ptwx" label="Timing Constraints" translator="ptwxToTableXML.xslt" />
