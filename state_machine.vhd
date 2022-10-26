@@ -43,14 +43,20 @@ begin
     
     case current_state is
       when IDLE =>
+        hready <= '1';
+        dmai.start <= '0';
         if htrans = "10" then
+          dmai.start <= '1';
           next_state <= FETCH;
         else
           next_state <= IDLE;
         end if;
        
       when FETCH =>
+        hready <= '0';
+        dmai.start <= '0';
         if dmao.ready = '1' then
+          hready <= '1';
           next_state <= IDLE;
         else
           next_state <= FETCH;
@@ -72,9 +78,17 @@ begin
 	  
 	end process;
 	
-	state_conditions : process (current_state,htrans,dmao.ready)
-	begin
-	  
+  dmai.burst <= '0';
+  dmai.irq <= '0';
+  dmai.busy <= '0';
+  dmai.address <= haddr;
+  dmai.wdata <= hwdata;
+  dmai.write <= hwrite;
+  dmai.size <= hsize;
+	
+--	state_conditions : process (current_state,htrans,dmao.ready)
+--	begin
+--	  
 --	  if current_state = IDLE then
 --	    hready <= '1';
 --	    dmai.start <= '0';
@@ -90,30 +104,7 @@ begin
 --	  else
 --	    hready <= '1';
 --	  end if;
-	  case current_state is
-	    when IDLE =>
-	      hready <= '1';
-	      dmai.start <= '0';
-	      if htrans <= "10" then
-	        dmai.start <= '1';
-			end if;
-	  
-	    when FETCH =>
-	      hready <= '0';
-			dmai.start <= '0';
-			if dmao.ready = '1' then
-			  hready <= '1';
-			end if;
-	   end case;
-	  
-	end process;
-	
-   dmai.burst <= '0';
-   dmai.irq <= '0';
-   dmai.busy <= '0';
-	dmai.address <= haddr;
-	dmai.wdata <= hwdata;
-	dmai.write <= hwrite;
-	dmai.size <= hsize;
+--	  
+--	end process;
 	
 end structural;
