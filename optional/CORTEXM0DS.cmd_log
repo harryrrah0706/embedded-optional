@@ -1,0 +1,3 @@
+vhdtdtfi -lib work {C:/Users/fx19583/embedded optional/CORTEXM0DS.v} -lang verilog -prj optional -o CORTEXM0DS.spl -module CORTEXM0DS -template C:/Xilinx/14.1/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 CORTEXM0DS.spl {C:/Users/fx19583/embedded optional/optional/CORTEXM0DS.sym} 
+vhdtdtfi -lang verilog -prj optional -o "C:/Users/fx19583/embedded optional/optional/CORTEXM0DS.vhi" -lib work "C:/Users/fx19583/embedded optional//CORTEXM0DS.v" -module CORTEXM0DS -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
