@@ -11,40 +11,40 @@ Target Device  : xc6slx100
 Target Package : fgg676
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu Oct 27 01:38:18 2022
+Mapped Date    : Thu Oct 27 02:24:04 2022
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Slice Logic Utilization:
-  Number of Slice Registers:                   873 out of 126,576    1%
-    Number used as Flip Flops:                 872
+  Number of Slice Registers:                   831 out of 126,576    1%
+    Number used as Flip Flops:                 830
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                1
-  Number of Slice LUTs:                      3,156 out of  63,288    4%
-    Number used as logic:                    3,147 out of  63,288    4%
-      Number using O6 output only:           2,811
+  Number of Slice LUTs:                      3,179 out of  63,288    5%
+    Number used as logic:                    3,168 out of  63,288    5%
+      Number using O6 output only:           2,820
       Number using O5 output only:              89
-      Number using O5 and O6:                  247
+      Number using O5 and O6:                  259
       Number used as ROM:                        0
     Number used as Memory:                       0 out of  15,616    0%
-    Number used exclusively as route-thrus:      9
-      Number with same-slice register load:      6
+    Number used exclusively as route-thrus:     11
+      Number with same-slice register load:      8
       Number with same-slice carry load:         3
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,122 out of  15,822    7%
+  Number of occupied Slices:                 1,093 out of  15,822    6%
   Nummber of MUXCYs used:                      156 out of  31,644    1%
-  Number of LUT Flip Flop pairs used:        3,299
-    Number with an unused Flip Flop:         2,436 out of   3,299   73%
-    Number with an unused LUT:                 143 out of   3,299    4%
-    Number of fully used LUT-FF pairs:         720 out of   3,299   21%
-    Number of unique control sets:              39
+  Number of LUT Flip Flop pairs used:        3,317
+    Number with an unused Flip Flop:         2,497 out of   3,317   75%
+    Number with an unused LUT:                 138 out of   3,317    4%
+    Number of fully used LUT-FF pairs:         682 out of   3,317   20%
+    Number of unique control sets:              38
     Number of slice register sites lost
-      to control set restrictions:              96 out of 126,576    1%
+      to control set restrictions:              98 out of 126,576    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -85,9 +85,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                4.76
 
-Peak Memory Usage:  4779 MB
-Total REAL time to MAP completion:  1 mins 49 secs 
-Total CPU time to MAP completion:   1 mins 48 secs 
+Peak Memory Usage:  4808 MB
+Total REAL time to MAP completion:  57 secs 
+Total CPU time to MAP completion:   57 secs 
 
 Table of Contents
 -----------------
@@ -759,45 +759,44 @@ Section 12 - Control Set Information
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Clock Signal | Reset Signal                            | Set Signal | Enable Signal                               | Slice Load Count | Bel Load Count |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+
-| clkm_BUFGP   |                                         |            |                                             | 3                | 3              |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            |                                             | 193              | 239            |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Afyvx4                     | 30               | 32             |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Bpsvx4                     | 1                | 1              |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/C5ovx4                     | 18               | 24             |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Ddyvx4                     | 27               | 32             |
+| clkm_BUFGP   |                                         |            |                                             | 1                | 3              |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            |                                             | 193              | 227            |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Afyvx4                     | 32               | 32             |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/C5ovx4                     | 19               | 24             |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Ddyvx4                     | 30               | 32             |
 | clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Feyvx4                     | 31               | 32             |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/G02wx4_inv                 | 28               | 30             |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Hfyvx4                     | 31               | 32             |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/J5vvx4                     | 2                | 2              |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/G02wx4_inv                 | 30               | 30             |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Hfyvx4                     | 32               | 32             |
 | clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Jb3wx4_hready_i_AND_1381_o | 2                | 2              |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/K6yvx4                     | 11               | 22             |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Kdyvx4                     | 32               | 32             |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/L0uvx4                     | 7                | 8              |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/K6yvx4                     | 5                | 6              |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Kdyvx4                     | 28               | 32             |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/L0uvx4                     | 4                | 8              |
 | clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Lqpvx4                     | 1                | 1              |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Meyvx4                     | 31               | 32             |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Ofyvx4                     | 31               | 32             |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Meyvx4                     | 32               | 32             |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/O5t2z4                     | 2                | 2              |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Ofyvx4                     | 30               | 32             |
 | clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/P2uvx4_Mf8vx4_AND_644_o    | 2                | 2              |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Pu1wx4_inv                 | 29               | 30             |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Pu1wx4_inv                 | 30               | 30             |
 | clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Qztvx4                     | 7                | 8              |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Rdyvx4                     | 30               | 32             |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Rdyvx4                     | 32               | 32             |
 | clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Rfpvx4                     | 4                | 4              |
 | clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Ro1wx4                     | 1                | 1              |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Siqvx4                     | 30               | 32             |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Siqvx4                     | 31               | 32             |
 | clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/T5tvx4                     | 2                | 2              |
 | clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Teyvx4                     | 31               | 32             |
 | clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/U1uvx4                     | 3                | 3              |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/U5qvx4                     | 2                | 2              |
 | clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Upyvx4                     | 1                | 1              |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Vaw2z4                     | 1                | 1              |
 | clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Vfyvx4                     | 31               | 32             |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Vtyvx4                     | 2                | 2              |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Vytvx4                     | 6                | 8              |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Vtyvx4                     | 1                | 1              |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Vytvx4                     | 4                | 8              |
 | clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/W2uvx4                     | 4                | 4              |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Wcyvx4                     | 30               | 32             |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Xppvx4                     | 31               | 32             |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Yafwx4                     | 12               | 14             |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Ydyvx4                     | 31               | 32             |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Wcyvx4                     | 29               | 32             |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Xppvx4                     | 32               | 32             |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Yafwx4                     | 3                | 4              |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Ydyvx4                     | 30               | 32             |
 | clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/Z0uvx4                     | 5                | 8              |
-| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | hready                                      | 3                | 3              |
+| clkm_BUFGP   | ahblite_bridge/state_machine_1/rstn_inv |            | cortexm0/u_logic/hprot_o<0>                 | 1                | 2              |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 13 - Utilization by Hierarchy
@@ -805,12 +804,12 @@ Section 13 - Utilization by Hierarchy
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Module             | Partition | Slices*       | Slice Reg     | LUTs          | LUTRAM        | BRAM/FIFO | DSP48A1 | BUFG  | BUFIO | BUFR  | DCM   | PLL_ADV   | Full Hierarchical Name                      |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| cm0_wrapper/       |           | 6/1131        | 0/872         | 7/3156        | 0/0           | 0/0       | 0/0     | 1/1   | 0/0   | 0/0   | 0/0   | 0/0       | cm0_wrapper                                 |
-| +ahblite_bridge    |           | 2/7           | 0/4           | 1/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cm0_wrapper/ahblite_bridge                  |
-| ++ahbmst_1         |           | 4/4           | 3/3           | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cm0_wrapper/ahblite_bridge/ahbmst_1         |
+| cm0_wrapper/       |           | 5/1098        | 0/830         | 7/3179        | 0/0           | 0/0       | 0/0     | 1/1   | 0/0   | 0/0   | 0/0   | 0/0       | cm0_wrapper                                 |
+| +ahblite_bridge    |           | 2/5           | 0/4           | 0/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cm0_wrapper/ahblite_bridge                  |
+| ++ahbmst_1         |           | 2/2           | 3/3           | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cm0_wrapper/ahblite_bridge/ahbmst_1         |
 | ++state_machine_1  |           | 1/1           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cm0_wrapper/ahblite_bridge/state_machine_1  |
-| +cortexm0          |           | 0/1118        | 0/868         | 0/3144        | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cm0_wrapper/cortexm0                        |
-| ++u_logic          |           | 1118/1118     | 868/868       | 3144/3144     | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cm0_wrapper/cortexm0/u_logic                |
+| +cortexm0          |           | 0/1088        | 0/826         | 0/3168        | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cm0_wrapper/cortexm0                        |
+| ++u_logic          |           | 1088/1088     | 826/826       | 3168/3168     | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cm0_wrapper/cortexm0/u_logic                |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 * Slices can be packed with basic elements from multiple hierarchies.

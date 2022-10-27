@@ -71,25 +71,25 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\fx19583\embedded optional\CORTEXM0DS.v" Line 152: Assignment to <arg fmt="%s" index="1">cm0_primask</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\cm0_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">83</arg>: Output port &lt;<arg fmt="%s" index="3">HBURST</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cortexm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\cm0_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">86</arg>: Output port &lt;<arg fmt="%s" index="3">HBURST</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cortexm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\cm0_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">83</arg>: Output port &lt;<arg fmt="%s" index="3">HPROT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cortexm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\cm0_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">86</arg>: Output port &lt;<arg fmt="%s" index="3">HPROT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cortexm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\cm0_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">83</arg>: Output port &lt;<arg fmt="%s" index="3">HMASTLOCK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cortexm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\cm0_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">86</arg>: Output port &lt;<arg fmt="%s" index="3">HMASTLOCK</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cortexm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\cm0_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">83</arg>: Output port &lt;<arg fmt="%s" index="3">TXEV</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cortexm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\cm0_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">86</arg>: Output port &lt;<arg fmt="%s" index="3">TXEV</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cortexm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\cm0_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">83</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKUP</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cortexm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\cm0_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">86</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKUP</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cortexm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\cm0_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">83</arg>: Output port &lt;<arg fmt="%s" index="3">SYSRESETREQ</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cortexm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\cm0_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">86</arg>: Output port &lt;<arg fmt="%s" index="3">SYSRESETREQ</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cortexm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\cm0_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">83</arg>: Output port &lt;<arg fmt="%s" index="3">SLEEPING</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cortexm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\cm0_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">86</arg>: Output port &lt;<arg fmt="%s" index="3">SLEEPING</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cortexm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fx19583\embedded optional\CORTEXM0DS.v</arg>&quot; line <arg fmt="%s" index="2">94</arg>: Output port &lt;<arg fmt="%s" index="3">vis_r0_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_logic</arg>&gt; is unconnected or connected to loadless signal.

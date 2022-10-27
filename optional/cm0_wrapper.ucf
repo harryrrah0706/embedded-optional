@@ -1,4 +1,4 @@
 
-#Created by Constraints Editor (xc6slx100-fgg676-3) - 2022/10/25
+#Created by Constraints Editor (xc6slx100-fgg676-3) - 2022/10/27
 NET "clkm" TNM_NET = clkm;
-TIMESPEC TS_clkm = PERIOD "clkm" 13 ns HIGH 50%;
+TIMESPEC TS_clkm = PERIOD "clkm" 13.5 ns HIGH 50%;
