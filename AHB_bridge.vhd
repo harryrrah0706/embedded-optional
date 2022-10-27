@@ -15,19 +15,19 @@ use UNISIM.VComponents.all;
 entity AHB_bridge is
   port(
  -- Clock and Reset -----------------
-    clkm : in std_ulogic;
-    rstn : in std_ulogic;
+    clkm   : in std_ulogic;
+    rstn   : in std_ulogic;
  -- AHB Master records --------------
-    ahbmi : in ahb_mst_in_type;
-    ahbmo : out ahb_mst_out_type;
+    ahbmi  : in ahb_mst_in_type;
+    ahbmo  : out ahb_mst_out_type;
  -- ARM Cortex-M0 AHB-Lite signals -- 
-    haddr : in std_logic_vector (31 downto 0);         -- AHB transaction address
-    hsize : in std_logic_vector (2 downto 0);          -- AHB size: byte, half-word or word
-    htrans : in std_logic_vector (1 downto 0);         -- AHB transfer: non-sequential only
-    hwdata : in std_logic_vector (31 downto 0);        -- AHB write-data
-    hwrite : in std_ulogic;                             -- AHB write control
-    hrdata : out std_logic_vector (31 downto 0);       -- AHB read-data
-    hready : out std_ulogic                             -- AHB stall signal
+    haddr  : in std_logic_vector (31 downto 0);
+    hsize  : in std_logic_vector (2 downto 0);
+    htrans : in std_logic_vector (1 downto 0);
+    hwdata : in std_logic_vector (31 downto 0);
+    hwrite : in std_ulogic;
+    hrdata : out std_logic_vector (31 downto 0);
+    hready : out std_ulogic
   );
 end;
 
@@ -35,23 +35,23 @@ end;
 
 architecture structural of AHB_bridge is
   
---declare a component for state_machine
+-- Declare a component for state_machine
   component state_machine
     port(
-      hwdata	: in std_logic_vector(AHBDW-1 downto 0); 	-- write data bus
-      hready	: out std_ulogic;                         -- transfer done
-      htrans	: in std_logic_vector(1 downto 0); 	      -- transfer type
-      haddr	: in std_logic_vector(31 downto 0); 	      -- address bus (byte)
-      hwrite	: in std_ulogic;                         	-- read/write
-      hsize	: in std_logic_vector(2 downto 0);         -- transfer size
-      dmai : out ahb_dma_in_type;
-      dmao : in ahb_dma_out_type;
-      clkm : in std_ulogic;
-      rstn : in std_ulogic
+      hwdata	 : in std_logic_vector(AHBDW-1 downto 0); 	-- write data bus
+      hready	 : out std_ulogic;                         -- transfer done
+      htrans	 : in std_logic_vector(1 downto 0); 	      -- transfer type
+      haddr	  : in std_logic_vector(31 downto 0); 	      -- address bus (byte)
+      hwrite	 : in std_ulogic;                         	-- read/write
+      hsize	  : in std_logic_vector(2 downto 0);         -- transfer size
+      dmai    : out ahb_dma_in_type;
+      dmao    : in ahb_dma_out_type;
+      clkm    : in std_ulogic;
+      rstn    : in std_ulogic
     );
   end component;
     
---declare a component for ahbmst 
+-- Declare a component for ahbmst
   component ahbmst
     generic (
       hindex  : integer := 0;
@@ -63,64 +63,40 @@ architecture structural of AHB_bridge is
       incaddr : integer := 0
     ); 
     port (
-      rst  : in  std_ulogic;
-      clk  : in  std_ulogic;
-      dmai : in ahb_dma_in_type;
-      dmao : out ahb_dma_out_type;
-      ahbi : in  ahb_mst_in_type;
-      ahbo : out ahb_mst_out_type
+      rst     : in  std_ulogic;
+      clk     : in  std_ulogic;
+      dmai    : in ahb_dma_in_type;
+      dmao    : out ahb_dma_out_type;
+      ahbi    : in  ahb_mst_in_type;
+      ahbo    : out ahb_mst_out_type
     );
   end component;
       
---declare a component for data_swapper 
+-- Declare a component for data_swapper
   component data_swapper
     port(
-      dmao : in ahb_dma_out_type;
-      hrdata	: out std_logic_vector(AHBDW-1 downto 0)
+      dmao    : in ahb_dma_out_type;
+      hrdata  : out std_logic_vector(AHBDW-1 downto 0)
     );
   end component;
 
+-- Create signals for the architecture
   signal dmai : ahb_dma_in_type;
   signal dmao : ahb_dma_out_type;
 
 begin
   
---instantiate state_machine component and make the connections
+-- Instantiate state_machine component and make the connections
   state_machine_1 : state_machine
-    port map(
-      hwdata,
-      hready,
-      htrans,
-      haddr,
-      hwrite,
-      hsize,
-      dmai,
-      dmao,
-      clkm,
-      rstn);
+    port map(hwdata,hready,htrans,haddr,hwrite,hsize,dmai,dmao,clkm,rstn);
       
---instantiate the ahbmst component and make the connections 
+-- Instantiate the ahbmst component and make the connections
   ahbmst_1 : ahbmst
-    generic map(
-      0,
-      0,
-      VENDOR_GAISLER,
-      0,
-      0,
-      3,
-      0)
-    port map(
-      rstn,
-      clkm,
-      dmai,
-      dmao,
-      ahbmi,
-      ahbmo);
+    generic map(0,0,VENDOR_GAISLER,0,0,3,0)
+    port map(rstn,clkm,dmai,dmao,ahbmi,ahbmo);
       
---instantiate the data_swapper component and make the connections
+-- Instantiate the data_swapper component and make the connections
   data_swapper_1 : data_swapper
-    port map(
-      dmao,
-      hrdata);
+    port map(dmao,hrdata);
   
 end structural;
