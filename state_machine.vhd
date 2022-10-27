@@ -14,16 +14,16 @@ use UNISIM.VComponents.all;
 
 entity state_machine is
   port(
-    hwdata	: in std_logic_vector(AHBDW-1 downto 0); 	-- write data bus
-    hready	: out std_ulogic;                         -- transfer done
-    htrans	: in std_logic_vector(1 downto 0); 	      -- transfer type
-    haddr	: in std_logic_vector(31 downto 0); 	      -- address bus (byte)
-    hwrite	: in std_ulogic;                         	-- read/write
-    hsize	: in std_logic_vector(2 downto 0);         -- transfer size
-    dmai : out ahb_dma_in_type;
-    dmao : in ahb_dma_out_type;
-    clkm : in std_ulogic;
-    rstn : in std_ulogic
+    hwdata	: in std_logic_vector(AHBDW-1 downto 0);
+    hready	: out std_ulogic;
+    htrans	: in std_logic_vector(1 downto 0);
+    haddr	 : in std_logic_vector(31 downto 0);
+    hwrite	: in std_ulogic;
+    hsize	 : in std_logic_vector(2 downto 0);
+    dmai   : out ahb_dma_in_type;
+    dmao   : in ahb_dma_out_type;
+    clkm   : in std_ulogic;
+    rstn   : in std_ulogic
   );
 end entity;
 
@@ -34,10 +34,20 @@ architecture structural of state_machine is
   type state_type is (IDLE,FETCH);
   
   signal current_state : state_type;
-  signal next_state : state_type;
+  signal next_state    : state_type;
   
 begin
   
+-- Make the connections
+  dmai.burst <= '0';
+  dmai.irq <= '0';
+  dmai.busy <= '0';
+  dmai.address <= haddr;
+  dmai.wdata <= hwdata;
+  dmai.write <= hwrite;
+  dmai.size <= hsize;
+  
+-- State machine with two states (IDLE and FETCH) that is triggered by HTRANS and DMAO.READY
   state_transition : process(dmao.ready,htrans,current_state)
   begin
     
@@ -64,7 +74,8 @@ begin
     end case;
     
   end process;
-  
+
+-- State register process to change from current state to next state
   state_register : process (clkm, rstn)	
   begin
     
@@ -77,15 +88,12 @@ begin
 	  end if;
 	  
 	end process;
-	
-  dmai.burst <= '0';
-  dmai.irq <= '0';
-  dmai.busy <= '0';
-  dmai.address <= haddr;
-  dmai.wdata <= hwdata;
-  dmai.write <= hwrite;
-  dmai.size <= hsize;
-	
+
+-- The code below shows our implementation of the state machine with the state transition
+-- and signal assignment written separately.
+
+
+
 --	state_conditions : process (current_state,htrans,dmao.ready)
 --	begin
 --	  
