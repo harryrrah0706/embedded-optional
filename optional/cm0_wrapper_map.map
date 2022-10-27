@@ -4,14 +4,14 @@ Xilinx Map Application Log File for Design 'cm0_wrapper'
 Design Information
 ------------------
 Command Line   : map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol
-high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
--pr off -lc off -power off -o cm0_wrapper_map.ncd cm0_wrapper.ngd
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail
+-ir off -pr off -lc off -power off -o cm0_wrapper_map.ncd cm0_wrapper.ngd
 cm0_wrapper.pcf 
 Target Device  : xc6slx100
 Target Package : fgg676
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu Oct 27 20:33:20 2022
+Mapped Date    : Thu Oct 27 23:10:59 2022
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
@@ -43,10 +43,10 @@ Phase 1.1  Initial Placement Analysis
 Phase 1.1  Initial Placement Analysis (Checksum:1b6c335) REAL time: 5 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:1b6c335) REAL time: 5 secs 
+Phase 2.7  Design Feasibility Check (Checksum:1b6c335) REAL time: 6 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:1b6c335) REAL time: 5 secs 
+Phase 3.31  Local Placement Optimization (Checksum:1b6c335) REAL time: 6 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 ...
@@ -63,31 +63,31 @@ Phase 6.30  Global Clock Region Assignment (Checksum:bb5834bd) REAL time: 22 sec
 Phase 7.3  Local Placement Optimization
 ...
 ....
-Phase 7.3  Local Placement Optimization (Checksum:95dee6d8) REAL time: 33 secs 
+Phase 7.3  Local Placement Optimization (Checksum:95dee6d8) REAL time: 34 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:95dee6d8) REAL time: 33 secs 
+Phase 8.5  Local Placement Optimization (Checksum:95dee6d8) REAL time: 34 secs 
 
 Phase 9.8  Global Placement
 ...........................
 ................................................................................................
 ...........................................................................................................................................................
 ...................................
-Phase 9.8  Global Placement (Checksum:970d5760) REAL time: 42 secs 
+Phase 9.8  Global Placement (Checksum:970d5760) REAL time: 43 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:970d5760) REAL time: 42 secs 
+Phase 10.5  Local Placement Optimization (Checksum:970d5760) REAL time: 43 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:53bb6645) REAL time: 1 mins 2 secs 
+Phase 11.18  Placement Optimization (Checksum:53bb6645) REAL time: 1 mins 3 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:53bb6645) REAL time: 1 mins 2 secs 
+Phase 12.5  Local Placement Optimization (Checksum:53bb6645) REAL time: 1 mins 3 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:b6568fc1) REAL time: 1 mins 2 secs 
+Phase 13.34  Placement Validation (Checksum:b6568fc1) REAL time: 1 mins 3 secs 
 
-Total REAL time to Placer completion: 1 mins 2 secs 
+Total REAL time to Placer completion: 1 mins 3 secs 
 Total CPU  time to Placer completion: 1 mins 2 secs 
 Running post-placement packing...
 Writing output files...
@@ -167,8 +167,8 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                4.76
 
 Peak Memory Usage:  4779 MB
-Total REAL time to MAP completion:  1 mins 4 secs 
-Total CPU time to MAP completion:   1 mins 3 secs 
+Total REAL time to MAP completion:  1 mins 5 secs 
+Total CPU time to MAP completion:   1 mins 4 secs 
 
 Mapping completed.
 See MAP report file "cm0_wrapper_map.mrp" for details.

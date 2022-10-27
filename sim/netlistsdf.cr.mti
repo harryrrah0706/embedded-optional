@@ -1,3 +1,3 @@
-{C:/Users/fx19583/embedded optional/optional/netgen/par/cm0_wrapper_timesim.vhd} {1 {vcom -work work -93 -explicit -quiet -source -nowarn 1 -nowarn 5 -novopt {C:/Users/fx19583/embedded optional/optional/netgen/par/cm0_wrapper_timesim.vhd}
+{C:/Users/fx19583/embedded optional/sim/cm0_wrapper_timesim.vhd} {1 {vcom -work work -93 -explicit -quiet -source -nowarn 1 -nowarn 5 -novopt {C:/Users/fx19583/embedded optional/sim/cm0_wrapper_timesim.vhd}
 
 } {} {}}
