@@ -122,11 +122,13 @@ entity leon3mp is
     spi_mosi  : out   std_ulogic;
 
     -- Output signals to LEDs
-    led       : out   std_logic_vector(2 downto 0)
+    led       : out   std_logic_vector(2 downto 0);
+    cm0_led   : out   std_ulogic
     );
 end;
 
 architecture rtl of leon3mp is
+  
   signal vcc : std_logic;
   signal gnd : std_logic;
 
@@ -208,6 +210,19 @@ architecture rtl of leon3mp is
 
   constant BOARD_FREQ : integer := 125000;                                -- input frequency in KHz
   constant CPU_FREQ   : integer := BOARD_FREQ * CFG_CLKMUL / CFG_CLKDIV;  -- cpu frequency in KHz
+  
+  component cm0_wrapper
+    port(
+ -- Clock and Reset -----------------
+    clkm : in std_logic;
+    rstn : in std_logic;
+ -- AHB Master records --------------
+    ahbmi : in ahb_mst_in_type;
+    ahbmo : out ahb_mst_out_type;
+ -- LED signal ----------------------
+    cm0_led : out std_ulogic);
+  end component;
+  
 begin
 
 ----------------------------------------------------------------------
@@ -608,4 +623,12 @@ begin
       );
 -- pragma translate_on
 
+----------------------------------------------------------------------
+--- ARM Cortex-M0 Processor -----------------------------------------
+----------------------------------------------------------------------
+  cm0gen : if CFG_CM0 = 1 generate
+    wrapper : cm0_wrapper
+    port map (clkm,rstn,ahbmi,ahbmo(0),cm0_led);
+  end generate;
+  
 end rtl;

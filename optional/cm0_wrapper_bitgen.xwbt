@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\fx19583\embedded optional\optional\cm0_wrapper.ncd
+OUTFILE=C:\Users\fx19583\embedded optional\optional\cm0_wrapper.bit
+FAMILY=Spartan6
+PART=xc6slx100-3fgg676
+WORKINGDIR=C:\Users\fx19583\embedded optional\optional
+LICENSE=ISE
+USER_INFO=210985181_175113628_210671967_605

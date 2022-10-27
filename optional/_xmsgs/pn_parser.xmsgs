@@ -8,45 +8,6 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/AHB_bridge.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/fx19583/embedded optional/CORTEXM0DS.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/ahbmst.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/cm0_wrapper.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/fx19583/embedded optional/cortexm0ds_logic.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/data_swapper.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/grlib-gpl-1.1.0-b4108/lib/gaisler/misc.vhd&quot; into library gaisler</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/grlib-gpl-1.1.0-b4108/lib/grlib/amba.vhd&quot; into library grlib</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/grlib-gpl-1.1.0-b4108/lib/grlib/config.vhd&quot; into library grlib</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/grlib-gpl-1.1.0-b4108/lib/grlib/devices.vhd&quot; into library grlib</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/grlib-gpl-1.1.0-b4108/lib/grlib/stdlib.vhd&quot; into library grlib</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/grlib-gpl-1.1.0-b4108/lib/grlib/version.vhd&quot; into library grlib</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/grlib-gpl-1.1.0-b4108/lib/techmap/gencomp.vhd&quot; into library techmap</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/fx19583/embedded optional/state_machine.vhd&quot; into library work</arg>
 </msg>
 

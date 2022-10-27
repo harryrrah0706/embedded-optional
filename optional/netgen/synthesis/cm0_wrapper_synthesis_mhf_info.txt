@@ -1,0 +1,17 @@
+// Xilinx design hierarchy information file produced by netgen (P.15xf) 
+// The information in this file is useful for 
+//   - Design hierarchy relationship between modules 
+//   - Bottom up compilation order (VHDL simulation) 
+//
+//  Design Name : cm0_wrapper
+//
+//  Module      : The name of the hierarchical design module.
+//  Instance    : The instance name used in the parent module.
+//  Design File : The name of the file that contains the module.
+//  SubModule   : The sub module(s) contained within a given module.
+//     Module, Instance : The sub module and instance names.
+
+  Module      : cm0_wrapper
+  Design File : cm0_wrapper_synthesis.vhd
+  SubModule   : NONE
+
