@@ -1,7 +1,7 @@
 Release 14.1 par P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-IT096555::  Thu Oct 27 23:12:07 2022
+IT081421::  Mon Oct 31 11:57:44 2022
 
 par -w -intstyle ise -ol high -mt off cm0_wrapper_map.ncd cm0_wrapper.ncd
 cm0_wrapper.pcf 
@@ -104,37 +104,37 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 3 secs 
-Finished initial Timing Analysis.  REAL time: 3 secs 
+Starting initial Timing Analysis.  REAL time: 4 secs 
+Finished initial Timing Analysis.  REAL time: 4 secs 
 
 Starting Router
 
 
-Phase  1  : 20323 unrouted;      REAL time: 4 secs 
+Phase  1  : 20323 unrouted;      REAL time: 5 secs 
 
-Phase  2  : 19200 unrouted;      REAL time: 4 secs 
+Phase  2  : 19200 unrouted;      REAL time: 6 secs 
 
-Phase  3  : 8414 unrouted;      REAL time: 8 secs 
+Phase  3  : 8414 unrouted;      REAL time: 12 secs 
 
-Phase  4  : 8731 unrouted; (Setup:775, Hold:0, Component Switching Limit:0)     REAL time: 10 secs 
-
-Updating file: cm0_wrapper.ncd with current fully routed design.
-
-Phase  5  : 0 unrouted; (Setup:1430, Hold:0, Component Switching Limit:0)     REAL time: 31 secs 
-
-Phase  6  : 0 unrouted; (Setup:648, Hold:0, Component Switching Limit:0)     REAL time: 36 secs 
+Phase  4  : 8731 unrouted; (Setup:775, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
 
 Updating file: cm0_wrapper.ncd with current fully routed design.
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 3 secs 
+Phase  5  : 0 unrouted; (Setup:1430, Hold:0, Component Switching Limit:0)     REAL time: 47 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 3 secs 
+Phase  6  : 0 unrouted; (Setup:648, Hold:0, Component Switching Limit:0)     REAL time: 56 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 3 secs 
+Updating file: cm0_wrapper.ncd with current fully routed design.
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 4 secs 
-Total REAL time to Router completion: 2 mins 4 secs 
-Total CPU time to Router completion: 2 mins 8 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 42 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 42 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 42 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 45 secs 
+Total REAL time to Router completion: 2 mins 45 secs 
+Total CPU time to Router completion: 2 mins 51 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -184,10 +184,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 2 mins 6 secs 
-Total CPU time to PAR completion: 2 mins 10 secs 
+Total REAL time to PAR completion: 2 mins 48 secs 
+Total CPU time to PAR completion: 2 mins 54 secs 
 
-Peak Memory Usage:  4688 MB
+Peak Memory Usage:  4662 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

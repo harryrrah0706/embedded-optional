@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.1
+# Build 179419 by xbuild on Thu Apr 26 11:41:35 MDT 2012
+# Start of session at: Mon Oct 31 11:52:05 2022
+# Process ID: 1976
+# Log file: C:/Users/fx19583/embedded/embedded-optional/optional/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/fx19583/embedded/embedded-optional/optional/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/fx19583/embedded/embedded-optional/optional/pa.fromNetlist.tcl
+exit

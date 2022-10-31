@@ -38,7 +38,7 @@ library SIMPRIM;
 use SIMPRIM.VCOMPONENTS.ALL;
 use SIMPRIM.VPACKAGE.ALL;
 
-entity cm0_wrapper_timesim is
+entity cm0_wrapper is
   port (
     clkm : in STD_LOGIC := 'X'; 
     rstn : in STD_LOGIC := 'X'; 
@@ -63,12 +63,12 @@ entity cm0_wrapper_timesim is
     ahbmo_hprot : out STD_LOGIC_VECTOR ( 3 downto 0 ); 
     ahbmo_hwdata : out STD_LOGIC_VECTOR ( 31 downto 0 ); 
     ahbmo_hirq : out STD_LOGIC_VECTOR ( 31 downto 0 ); 
-    ahbmo_hconfig : out STD_LOGIC_VECTOR2 ( 7 downto 0 , 31 downto 0 ); 
+    ahbmo_hconfig : out STD_LOGIC_VECTOR ( 7 downto 0 , 31 downto 0 ); 
     ahbmo_hindex : out STD_LOGIC_VECTOR ( 3 downto 0 ) 
   );
-end cm0_wrapper_timesim;
+end cm0_wrapper;
 
-architecture Structure of cm0_wrapper_timesim is
+architecture Structure of cm0_wrapper is
   signal cortexm0_u_logic_K9ovx4 : STD_LOGIC; 
   signal cortexm0_u_logic_Tdp2z4_25892 : STD_LOGIC; 
   signal cortexm0_u_logic_Uaj2z4_25893 : STD_LOGIC; 

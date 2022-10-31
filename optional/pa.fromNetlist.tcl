@@ -1,11 +1,10 @@
 
-# PlanAhead Launch Script for Post-Synthesis pin planning, created by Project Navigator
+# PlanAhead Launch Script for Post-Synthesis floorplanning, created by Project Navigator
 
-create_project -name optional -dir "C:/Users/fx19583/embedded optional/optional/planAhead_run_1" -part xc6slx100fgg676-3
+create_project -name optional -dir "C:/Users/fx19583/embedded/embedded-optional/optional/planAhead_run_1" -part xc6slx100fgg676-3
 set_property design_mode GateLvl [get_property srcset [current_run -impl]]
-set_property edif_top_file "C:/Users/fx19583/embedded optional/optional/cm0_wrapper.ngc" [ get_property srcset [ current_run ] ]
-add_files -norecurse { {C:/Users/fx19583/embedded optional/optional} }
-set_param project.pinAheadLayout  yes
+set_property edif_top_file "C:/Users/fx19583/embedded/embedded-optional/optional/cm0_wrapper.ngc" [ get_property srcset [ current_run ] ]
+add_files -norecurse { {C:/Users/fx19583/embedded/embedded-optional/optional} }
 set_property target_constrs_file "cm0_wrapper.ucf" [current_fileset -constrset]
 add_files [list {cm0_wrapper.ucf}] -fileset [get_property constrset [current_run]]
 link_design
